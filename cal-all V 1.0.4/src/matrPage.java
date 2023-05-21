@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -162,13 +165,14 @@ public class matrPage extends javax.swing.JFrame {
         getContentPane().add(jbox);
         jbox.setBounds(160, 20, 72, 20);
 
-        setSize(new java.awt.Dimension(416, 308));
+        setSize(new java.awt.Dimension(416, 329));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
     int x1, x2, x3, y1, y2, y3, z1, z2, z3, r1, r2, r3;
     String result, op;
+    try{
     op = jbox.getSelectedItem().toString();
    if(op.equals("2x2")){
     x1 = Integer.parseInt(x1v.getText());
@@ -196,12 +200,15 @@ public class matrPage extends javax.swing.JFrame {
     R.setText(String.valueOf(result));
     
    }
+    }catch (NumberFormatException x) {
+            JOptionPane.showMessageDialog(null, "Digite apenas validos");
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jboxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jboxActionPerformed
        String op;
        op = jbox.getSelectedItem().toString();
-       if(op == "3x3"){
+       if(op.equals("3x3")){
           x3v.setVisible(true);
       y3v.setVisible(true);
       r3v.setVisible(true);

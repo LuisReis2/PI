@@ -7,12 +7,12 @@
  *
  * @author Luis
  */
-public class pageNivel3 extends javax.swing.JFrame {
+public class figuPlanPage extends javax.swing.JFrame {
 
     /**
-     * Creates new form pageNivel3
+     * Creates new form figuPlanPage
      */
-    public pageNivel3() {
+    public figuPlanPage() {
         initComponents();
     }
 
@@ -27,58 +27,40 @@ public class pageNivel3 extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        Beq2 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
 
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel1.setText("Escolha uma equação");
+        jLabel1.setText("Qual Formula?");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(75, 6, 230, 32);
+        jLabel1.setBounds(120, 20, 171, 29);
 
-        jButton1.setText("Formulas de figuras");
+        jButton1.setText("Quadrado");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(280, 210, 140, 23);
+        jButton1.setBounds(40, 240, 90, 23);
 
-        Beq2.setText("Equação 2 grau");
-        Beq2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Beq2ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(Beq2);
-        Beq2.setBounds(21, 213, 111, 23);
+        jButton2.setText("Retângulo");
+        getContentPane().add(jButton2);
+        jButton2.setBounds(170, 240, 90, 23);
 
-        jButton3.setText("Matriz");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
+        jButton3.setText("Triângulo");
         getContentPane().add(jButton3);
-        jButton3.setBounds(171, 213, 72, 23);
+        jButton3.setBounds(290, 240, 90, 23);
 
-        setSize(new java.awt.Dimension(455, 308));
-        setLocationRelativeTo(null);
+        pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-    new figuPlanPage().setVisible(true);               // TODO add your handling code here:
+    new Qpage().setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void Beq2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Beq2ActionPerformed
-            // TODO add your handling code here:
-    }//GEN-LAST:event_Beq2ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        new matrPage().setVisible(true);        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -97,27 +79,27 @@ public class pageNivel3 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(pageNivel3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(figuPlanPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(pageNivel3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(figuPlanPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(pageNivel3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(figuPlanPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(pageNivel3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(figuPlanPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new pageNivel3().setVisible(true);
+                new figuPlanPage().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Beq2;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
