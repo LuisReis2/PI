@@ -43,7 +43,7 @@ public class Menucal extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(0, 153, 102));
         jButton1.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
-        jButton1.setText("Operações Medio");
+        jButton1.setText("Conversões");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);

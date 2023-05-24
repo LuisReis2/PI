@@ -89,10 +89,10 @@ public class Qpage extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
        String op, msg;
-       int L, area, peri;
-       
+       int L, area, a, vol, peri;
+       //arestav.setText("0");
        L = Integer.parseInt(ladov.getText());
-      
+       
         op = form.getSelectedItem().toString();
         if(op.equals("área")){
             area = L*L;
@@ -102,6 +102,11 @@ public class Qpage extends javax.swing.JFrame {
             peri = L*4;
             msg = "O perimetro do quadrado é " + peri + "cm";
             R.setText(String.valueOf(msg));
+        } else if(op.equals("volume")){
+            a = Integer.parseInt(arestav.getText());
+            vol =  (a * a)* a;
+            msg = "O volume do cubo é " + vol + "cm³";
+             R.setText(String.valueOf(msg));
         }
     }                                        
 
