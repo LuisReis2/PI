@@ -39,7 +39,7 @@ public class callPage extends javax.swing.JFrame {
 
         jLabel1.setText("Escolha um gênero");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(110, 40, 120, 16);
+        jLabel1.setBounds(110, 40, 120, 15);
 
         genero.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "homem", "mulher" }));
         genero.addActionListener(new java.awt.event.ActionListener() {
@@ -48,7 +48,7 @@ public class callPage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(genero);
-        genero.setBounds(130, 60, 76, 22);
+        genero.setBounds(110, 60, 100, 24);
 
         xv.setText("0");
         xv.addActionListener(new java.awt.event.ActionListener() {
@@ -57,26 +57,24 @@ public class callPage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(xv);
-        xv.setBounds(30, 120, 71, 22);
+        xv.setBounds(30, 120, 71, 30);
 
         jLabel2.setText("peso");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(30, 100, 25, 16);
+        jLabel2.setBounds(30, 95, 80, 20);
 
-        jToggleButton1.setText("jToggleButton1");
+        jToggleButton1.setText("Calcular");
         jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jToggleButton1ActionPerformed(evt);
             }
         });
         getContentPane().add(jToggleButton1);
-        jToggleButton1.setBounds(260, 250, 111, 23);
-
-        R.setText("jLabel3");
+        jToggleButton1.setBounds(260, 250, 110, 25);
         getContentPane().add(R);
-        R.setBounds(30, 150, 350, 30);
+        R.setBounds(30, 160, 350, 30);
 
-        setSize(new java.awt.Dimension(416, 308));
+        setSize(new java.awt.Dimension(416, 354));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

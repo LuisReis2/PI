@@ -39,11 +39,12 @@ public class ImcPage extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         IMC = new javax.swing.JLabel();
 
+        setTitle("IMC");
         getContentPane().setLayout(null);
 
         jLabel1.setText("Informe sua altura:");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(10, 160, 130, 30);
+        jLabel1.setBounds(10, 160, 110, 30);
 
         jLabel2.setText("Informe seu peso:");
         getContentPane().add(jLabel2);
@@ -69,9 +70,9 @@ public class ImcPage extends javax.swing.JFrame {
         getContentPane().add(Cl);
         Cl.setBounds(290, 212, 150, 30);
         getContentPane().add(altura);
-        altura.setBounds(120, 160, 64, 30);
+        altura.setBounds(120, 160, 100, 30);
         getContentPane().add(peso);
-        peso.setBounds(120, 120, 64, 30);
+        peso.setBounds(120, 120, 100, 30);
 
         jButton1.setText("Calcular");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
