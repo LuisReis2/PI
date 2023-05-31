@@ -14,6 +14,8 @@ public class Qpageboa extends javax.swing.JFrame {
      */
     public Qpageboa() {
         initComponents();
+        labelca.setVisible(false);
+        arestav.setVisible(false);
     }
 
     /**
@@ -33,7 +35,7 @@ public class Qpageboa extends javax.swing.JFrame {
         labelca = new javax.swing.JLabel();
         labeltl = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(null);
 
         form.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "área", "perimetro", "volume" }));
@@ -43,7 +45,7 @@ public class Qpageboa extends javax.swing.JFrame {
             }
         });
         getContentPane().add(form);
-        form.setBounds(130, 32, 86, 20);
+        form.setBounds(130, 32, 73, 20);
 
         ladov.setText("0");
         ladov.addActionListener(new java.awt.event.ActionListener() {
@@ -70,19 +72,19 @@ public class Qpageboa extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(310, 190, 75, 23);
+        jButton1.setBounds(310, 190, 73, 25);
 
-        R.setText("jLabel2");
+        R.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         getContentPane().add(R);
-        R.setBounds(10, 230, 340, 40);
+        R.setBounds(20, 200, 340, 40);
 
         labelca.setText("comprimento das aresta");
         getContentPane().add(labelca);
-        labelca.setBounds(10, 140, 140, 16);
+        labelca.setBounds(10, 140, 140, 15);
 
         labeltl.setText("tamanho do lado");
         getContentPane().add(labeltl);
-        labeltl.setBounds(20, 90, 100, 16);
+        labeltl.setBounds(20, 90, 100, 15);
 
         setSize(new java.awt.Dimension(416, 308));
         setLocationRelativeTo(null);

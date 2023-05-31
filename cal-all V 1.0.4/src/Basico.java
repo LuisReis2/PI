@@ -32,6 +32,7 @@ public class Basico extends javax.swing.JFrame {
         Soma = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setTitle("Operações Basicas");
         getContentPane().setLayout(null);
@@ -69,6 +70,7 @@ public class Basico extends javax.swing.JFrame {
         jButton4.setBounds(340, 230, 140, 33);
 
         Soma.setText("Soma");
+        Soma.setToolTipText("X + Y = Z");
         Soma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SomaActionPerformed(evt);
@@ -94,6 +96,16 @@ public class Basico extends javax.swing.JFrame {
         });
         getContentPane().add(jButton8);
         jButton8.setBounds(10, 290, 140, 33);
+
+        jButton2.setText("Potencia");
+        jButton2.setToolTipText("2² = 4");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton2);
+        jButton2.setBounds(190, 340, 110, 30);
 
         setSize(new java.awt.Dimension(518, 521));
         setLocationRelativeTo(null);
@@ -122,6 +134,10 @@ new callPage() .setVisible(true);          // TODO add your handling code here:
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
 new ImcPage() .setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    new powPage().setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -162,6 +178,7 @@ new ImcPage() .setVisible(true);        // TODO add your handling code here:
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Soma;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton7;
