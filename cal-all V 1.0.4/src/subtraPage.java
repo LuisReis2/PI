@@ -28,15 +28,18 @@ public class subtraPage extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         sub1 = new javax.swing.JTextField();
         sub2 = new javax.swing.JTextField();
-        subresul = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        subresul = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setTitle("SubtraPage");
         getContentPane().setLayout(null);
 
+        jButton1.setBackground(new java.awt.Color(51, 51, 255));
+        jButton1.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setText("calcular");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -46,6 +49,10 @@ public class subtraPage extends javax.swing.JFrame {
         getContentPane().add(jButton1);
         jButton1.setBounds(350, 290, 72, 23);
 
+        sub1.setBackground(new java.awt.Color(51, 51, 255));
+        sub1.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
+        sub1.setForeground(new java.awt.Color(0, 0, 0));
+        sub1.setText("0");
         sub1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sub1ActionPerformed(evt);
@@ -54,6 +61,10 @@ public class subtraPage extends javax.swing.JFrame {
         getContentPane().add(sub1);
         sub1.setBounds(20, 180, 100, 38);
 
+        sub2.setBackground(new java.awt.Color(51, 51, 255));
+        sub2.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
+        sub2.setForeground(new java.awt.Color(0, 0, 0));
+        sub2.setText("0");
         sub2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sub2ActionPerformed(evt);
@@ -62,31 +73,33 @@ public class subtraPage extends javax.swing.JFrame {
         getContentPane().add(sub2);
         sub2.setBounds(160, 180, 100, 38);
 
-        subresul.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                subresulActionPerformed(evt);
-            }
-        });
-        getContentPane().add(subresul);
-        subresul.setBounds(330, 180, 100, 38);
-
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Leelawadee UI", 1, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 255));
         jLabel2.setText("=");
         getContentPane().add(jLabel2);
         jLabel2.setBounds(280, 180, 30, 38);
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Leelawadee UI", 1, 36)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 255));
         jLabel3.setText("-");
         getContentPane().add(jLabel3);
         jLabel3.setBounds(130, 180, 30, 38);
 
-        jLabel4.setText("Digite acima os numeros que deseja subtrair.");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(20, 290, 250, 16);
-
+        jLabel1.setFont(new java.awt.Font("Leelawadee", 3, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 255));
         jLabel1.setText("Subtração");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(110, 50, 130, 40);
+        jLabel1.setBounds(120, 30, 382, 89);
+
+        subresul.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
+        subresul.setForeground(new java.awt.Color(0, 0, 255));
+        getContentPane().add(subresul);
+        subresul.setBounds(320, 170, 100, 60);
+
+        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\page1.png")); // NOI18N
+        jLabel5.setText("jLabel2");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(0, 0, 500, 420);
 
         setSize(new java.awt.Dimension(504, 373));
         setLocationRelativeTo(null);
@@ -99,10 +112,6 @@ public class subtraPage extends javax.swing.JFrame {
     private void sub2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sub2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_sub2ActionPerformed
-
-    private void subresulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subresulActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_subresulActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
  int vsub1, vsub2, vsubresul;
@@ -154,9 +163,9 @@ public class subtraPage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JTextField sub1;
     private javax.swing.JTextField sub2;
-    private javax.swing.JTextField subresul;
+    private javax.swing.JLabel subresul;
     // End of variables declaration//GEN-END:variables
 }

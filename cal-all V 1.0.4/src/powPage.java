@@ -33,10 +33,15 @@ public class powPage extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         R = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(null);
 
+        potv.setBackground(new java.awt.Color(51, 51, 255));
+        potv.setForeground(new java.awt.Color(0, 0, 0));
         potv.setText("0");
         potv.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
@@ -44,8 +49,11 @@ public class powPage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(potv);
-        potv.setBounds(140, 60, 50, 30);
+        potv.setBounds(230, 90, 50, 30);
 
+        numv.setBackground(new java.awt.Color(51, 51, 255));
+        numv.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        numv.setForeground(new java.awt.Color(0, 0, 0));
         numv.setText("0");
         numv.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
@@ -53,36 +61,59 @@ public class powPage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(numv);
-        numv.setBounds(30, 60, 50, 30);
+        numv.setBounds(100, 90, 50, 30);
 
-        expoente.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        expoente.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
+        expoente.setForeground(new java.awt.Color(0, 0, 255));
         expoente.setText("0");
         getContentPane().add(expoente);
-        expoente.setBounds(70, 140, 120, 80);
+        expoente.setBounds(120, 120, 120, 80);
 
-        base.setFont(new java.awt.Font("Dialog", 0, 48)); // NOI18N
+        base.setFont(new java.awt.Font("Leelawadee UI", 1, 48)); // NOI18N
+        base.setForeground(new java.awt.Color(0, 0, 255));
         base.setText("0");
         getContentPane().add(base);
-        base.setBounds(40, 190, 80, 80);
+        base.setBounds(90, 170, 80, 80);
 
-        jLabel3.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
-        jLabel3.setText("=");
+        jLabel3.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel3.setText("sobre");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(180, 190, 34, 15);
+        jLabel3.setBounds(160, 90, 80, 30);
 
-        jButton1.setText("jButton1");
+        jButton1.setBackground(new java.awt.Color(51, 51, 255));
+        jButton1.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
+        jButton1.setText("calcular");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(280, 240, 73, 25);
+        jButton1.setBounds(280, 240, 72, 23);
 
-        R.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
-        R.setText("Result");
+        R.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
+        R.setForeground(new java.awt.Color(0, 0, 255));
         getContentPane().add(R);
-        R.setBounds(220, 160, 90, 80);
+        R.setBounds(210, 150, 100, 80);
+
+        jLabel4.setFont(new java.awt.Font("Leelawadee UI", 1, 36)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel4.setText("=");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(180, 190, 34, 40);
+
+        jLabel1.setFont(new java.awt.Font("Leelawadee", 3, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel1.setText("Potência");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(110, 0, 382, 89);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\page1.png")); // NOI18N
+        jLabel2.setText("jLabel2");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(-10, 0, 420, 340);
 
         setSize(new java.awt.Dimension(416, 339));
         setLocationRelativeTo(null);
@@ -149,7 +180,10 @@ public class powPage extends javax.swing.JFrame {
     private javax.swing.JLabel base;
     private javax.swing.JLabel expoente;
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JTextField numv;
     private javax.swing.JTextField potv;
     // End of variables declaration//GEN-END:variables

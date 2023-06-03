@@ -37,14 +37,19 @@ public class pageNivel2 extends javax.swing.JFrame {
         hexav = new javax.swing.JTextField();
         btnCalcular = new javax.swing.JButton();
         binariov = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
 
         getContentPane().setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 0, 0));
         jLabel1.setText("Decimal");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(10, 100, 50, 20);
+        jLabel1.setBounds(130, 110, 70, 20);
 
+        decimalv.setBackground(new java.awt.Color(255, 51, 51));
+        decimalv.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        decimalv.setForeground(new java.awt.Color(0, 0, 0));
         decimalv.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
                 decimalvFocusLost(evt);
@@ -56,23 +61,29 @@ public class pageNivel2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(decimalv);
-        decimalv.setBounds(70, 100, 71, 22);
+        decimalv.setBounds(200, 110, 80, 22);
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 0, 0));
         jLabel2.setText("Hexadecimal");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(0, 160, 80, 20);
+        jLabel2.setBounds(110, 170, 110, 20);
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(204, 0, 0));
         jLabel3.setText("Binário");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(10, 70, 50, 20);
+        jLabel3.setBounds(130, 80, 50, 20);
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(204, 0, 0));
         jLabel4.setText("Octal");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(10, 130, 50, 20);
+        jLabel4.setBounds(140, 140, 50, 20);
 
+        octalv.setBackground(new java.awt.Color(255, 51, 51));
+        octalv.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        octalv.setForeground(new java.awt.Color(0, 0, 0));
         octalv.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
                 octalvFocusLost(evt);
@@ -84,8 +95,11 @@ public class pageNivel2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(octalv);
-        octalv.setBounds(70, 130, 71, 22);
+        octalv.setBounds(200, 140, 80, 22);
 
+        hexav.setBackground(new java.awt.Color(255, 51, 51));
+        hexav.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        hexav.setForeground(new java.awt.Color(0, 0, 0));
         hexav.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
                 hexavFocusLost(evt);
@@ -97,8 +111,10 @@ public class pageNivel2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(hexav);
-        hexav.setBounds(80, 160, 71, 22);
+        hexav.setBounds(200, 170, 80, 22);
 
+        btnCalcular.setBackground(new java.awt.Color(255, 51, 51));
+        btnCalcular.setForeground(new java.awt.Color(0, 0, 0));
         btnCalcular.setText("Calcular");
         btnCalcular.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -106,15 +122,23 @@ public class pageNivel2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnCalcular);
-        btnCalcular.setBounds(180, 250, 73, 23);
+        btnCalcular.setBounds(130, 210, 73, 23);
 
+        binariov.setBackground(new java.awt.Color(255, 51, 51));
+        binariov.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        binariov.setForeground(new java.awt.Color(0, 0, 0));
         binariov.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
                 binariovFocusLost(evt);
             }
         });
         getContentPane().add(binariov);
-        binariov.setBounds(60, 70, 80, 22);
+        binariov.setBounds(200, 80, 80, 22);
+
+        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\page2.png")); // NOI18N
+        jLabel5.setText("jLabel5");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(0, 0, 400, 320);
 
         setSize(new java.awt.Dimension(416, 308));
         setLocationRelativeTo(null);
@@ -239,6 +263,7 @@ public class pageNivel2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JTextField octalv;
     // End of variables declaration//GEN-END:variables
 }

@@ -30,14 +30,17 @@ public class Qpageboa extends javax.swing.JFrame {
         form = new javax.swing.JComboBox<>();
         ladov = new javax.swing.JTextField();
         arestav = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
         R = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         labelca = new javax.swing.JLabel();
         labeltl = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(null);
 
+        form.setBackground(new java.awt.Color(0, 153, 51));
+        form.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
         form.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "área", "perimetro", "volume" }));
         form.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -45,8 +48,10 @@ public class Qpageboa extends javax.swing.JFrame {
             }
         });
         getContentPane().add(form);
-        form.setBounds(130, 32, 73, 20);
+        form.setBounds(130, 32, 91, 20);
 
+        ladov.setBackground(new java.awt.Color(0, 153, 51));
+        ladov.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
         ladov.setText("0");
         ladov.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -54,8 +59,10 @@ public class Qpageboa extends javax.swing.JFrame {
             }
         });
         getContentPane().add(ladov);
-        ladov.setBounds(140, 80, 60, 30);
+        ladov.setBounds(210, 100, 60, 30);
 
+        arestav.setBackground(new java.awt.Color(0, 153, 51));
+        arestav.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
         arestav.setText("0");
         arestav.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -63,28 +70,43 @@ public class Qpageboa extends javax.swing.JFrame {
             }
         });
         getContentPane().add(arestav);
-        arestav.setBounds(140, 130, 60, 30);
+        arestav.setBounds(210, 140, 60, 30);
 
-        jButton1.setText("jButton1");
+        R.setBackground(new java.awt.Color(0, 102, 0));
+        R.setFont(new java.awt.Font("Leelawadee UI", 1, 18)); // NOI18N
+        getContentPane().add(R);
+        R.setBounds(0, 200, 340, 40);
+
+        jButton1.setBackground(new java.awt.Color(0, 153, 51));
+        jButton1.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(153, 255, 153));
+        jButton1.setText("calcular");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(310, 190, 73, 25);
+        jButton1.setBounds(290, 120, 75, 23);
 
-        R.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        getContentPane().add(R);
-        R.setBounds(20, 200, 340, 40);
-
+        labelca.setBackground(new java.awt.Color(0, 102, 0));
+        labelca.setFont(new java.awt.Font("Leelawadee UI", 1, 18)); // NOI18N
+        labelca.setForeground(new java.awt.Color(0, 102, 0));
         labelca.setText("comprimento das aresta");
         getContentPane().add(labelca);
-        labelca.setBounds(10, 140, 140, 15);
+        labelca.setBounds(0, 140, 230, 25);
 
+        labeltl.setBackground(new java.awt.Color(0, 102, 0));
+        labeltl.setFont(new java.awt.Font("Leelawadee UI", 1, 18)); // NOI18N
+        labeltl.setForeground(new java.awt.Color(0, 102, 0));
         labeltl.setText("tamanho do lado");
         getContentPane().add(labeltl);
-        labeltl.setBounds(20, 90, 100, 15);
+        labeltl.setBounds(50, 100, 180, 25);
+
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\menupage.png")); // NOI18N
+        jLabel6.setText("jLabel6");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(0, 0, 410, 320);
 
         setSize(new java.awt.Dimension(416, 308));
         setLocationRelativeTo(null);
@@ -179,6 +201,7 @@ public class Qpageboa extends javax.swing.JFrame {
     private javax.swing.JTextField arestav;
     private javax.swing.JComboBox<String> form;
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel labelca;
     private javax.swing.JLabel labeltl;
     private javax.swing.JTextField ladov;

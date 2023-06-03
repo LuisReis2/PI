@@ -28,20 +28,24 @@ public class Soma extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         s1 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         s2 = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         somaresul = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setTitle("Soma");
         getContentPane().setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Leelawadee UI", 1, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 255));
         jLabel1.setText("Soma");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(121, 38, 97, 35);
+        jLabel1.setBounds(130, 50, 97, 35);
 
+        s1.setBackground(new java.awt.Color(51, 51, 255));
+        s1.setForeground(new java.awt.Color(0, 0, 0));
+        s1.setText("0");
         s1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 s1ActionPerformed(evt);
@@ -51,14 +55,14 @@ public class Soma extends javax.swing.JFrame {
         s1.setBounds(6, 139, 100, 38);
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 255));
         jLabel2.setText("+");
         getContentPane().add(jLabel2);
         jLabel2.setBounds(112, 139, 30, 38);
 
-        jLabel3.setText("Digite acima os numeros que deseja somar.");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(6, 240, 221, 15);
-
+        s2.setBackground(new java.awt.Color(51, 51, 255));
+        s2.setForeground(new java.awt.Color(0, 0, 0));
+        s2.setText("0");
         s2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 s2ActionPerformed(evt);
@@ -67,11 +71,14 @@ public class Soma extends javax.swing.JFrame {
         getContentPane().add(s2);
         s2.setBounds(150, 140, 100, 38);
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 0, 255));
         jLabel4.setText("=");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(260, 140, 40, 32);
+        jLabel4.setBounds(260, 140, 40, 48);
 
+        jButton1.setBackground(new java.awt.Color(51, 51, 255));
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setText("Calcular");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -79,11 +86,17 @@ public class Soma extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(280, 240, 90, 25);
+        jButton1.setBounds(80, 200, 90, 23);
 
-        somaresul.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        somaresul.setFont(new java.awt.Font("Leelawadee UI", 1, 18)); // NOI18N
+        somaresul.setForeground(new java.awt.Color(0, 0, 255));
         getContentPane().add(somaresul);
         somaresul.setBounds(280, 140, 120, 40);
+
+        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\page1.png")); // NOI18N
+        jLabel5.setText("jLabel2");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(0, 0, 430, 340);
 
         setSize(new java.awt.Dimension(434, 344));
         setLocationRelativeTo(null);
@@ -147,8 +160,8 @@ public class Soma extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JTextField s1;
     private javax.swing.JTextField s2;
     private javax.swing.JLabel somaresul;

@@ -40,25 +40,30 @@ public class Equacao extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         R1 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Resolução de Equação de segundo grau");
         getContentPane().setLayout(null);
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel1.setFont(new java.awt.Font("Sitka Subheading", 0, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel1.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 102, 0));
         jLabel1.setText("=0");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(270, 20, 50, 50);
 
-        A.setBackground(new java.awt.Color(0, 0, 0));
-        A.setForeground(new java.awt.Color(51, 255, 0));
+        A.setBackground(new java.awt.Color(0, 153, 51));
+        A.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        A.setForeground(new java.awt.Color(204, 255, 204));
+        A.setText("0");
         getContentPane().add(A);
         A.setBounds(50, 30, 40, 30);
 
-        B.setBackground(new java.awt.Color(0, 0, 0));
-        B.setForeground(new java.awt.Color(51, 255, 51));
+        B.setBackground(new java.awt.Color(0, 153, 51));
+        B.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        B.setForeground(new java.awt.Color(204, 255, 204));
+        B.setText("0");
         B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BActionPerformed(evt);
@@ -68,14 +73,16 @@ public class Equacao extends javax.swing.JFrame {
         B.setBounds(140, 30, 40, 30);
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel2.setFont(new java.awt.Font("Sitka Subheading", 0, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel2.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 102, 0));
         jLabel2.setText("x² +");
         getContentPane().add(jLabel2);
         jLabel2.setBounds(90, 20, 50, 50);
 
-        C.setBackground(new java.awt.Color(0, 0, 0));
-        C.setForeground(new java.awt.Color(51, 255, 0));
+        C.setBackground(new java.awt.Color(0, 153, 51));
+        C.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        C.setForeground(new java.awt.Color(204, 255, 204));
+        C.setText("0");
         C.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CActionPerformed(evt);
@@ -85,15 +92,15 @@ public class Equacao extends javax.swing.JFrame {
         C.setBounds(220, 30, 40, 30);
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel3.setFont(new java.awt.Font("Sitka Subheading", 0, 24)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel3.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 102, 0));
         jLabel3.setText("x +");
         getContentPane().add(jLabel3);
         jLabel3.setBounds(180, 20, 50, 50);
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 0));
-        jButton1.setFont(new java.awt.Font("Source Code Pro", 0, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 255, 0));
+        jButton1.setBackground(new java.awt.Color(0, 153, 51));
+        jButton1.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(153, 255, 153));
         jButton1.setText("Calcular");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -103,32 +110,40 @@ public class Equacao extends javax.swing.JFrame {
         getContentPane().add(jButton1);
         jButton1.setBounds(50, 70, 210, 30);
 
-        Delta.setFont(new java.awt.Font("Sitka Subheading", 0, 24)); // NOI18N
+        Delta.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
+        Delta.setForeground(new java.awt.Color(0, 102, 0));
         Delta.setText("O valor de Delta é:");
         getContentPane().add(Delta);
         Delta.setBounds(50, 120, 300, 30);
 
-        R2.setFont(new java.awt.Font("Sitka Subheading", 0, 24)); // NOI18N
+        R2.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
+        R2.setForeground(new java.awt.Color(0, 102, 0));
         getContentPane().add(R2);
         R2.setBounds(20, 220, 450, 50);
 
         jLabel7.setText("c");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(230, 10, 34, 15);
+        jLabel7.setBounds(230, 10, 34, 16);
 
         jLabel8.setText("a");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(60, 10, 34, 15);
+        jLabel8.setBounds(60, 10, 34, 16);
 
         jLabel9.setText("b");
         getContentPane().add(jLabel9);
-        jLabel9.setBounds(150, 10, 34, 15);
+        jLabel9.setBounds(150, 10, 34, 16);
 
-        R1.setFont(new java.awt.Font("Sitka Subheading", 0, 24)); // NOI18N
+        R1.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
+        R1.setForeground(new java.awt.Color(0, 102, 0));
         getContentPane().add(R1);
-        R1.setBounds(10, 160, 450, 50);
+        R1.setBounds(10, 170, 450, 50);
 
-        setSize(new java.awt.Dimension(527, 336));
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\menupage.png")); // NOI18N
+        jLabel6.setText("jLabel6");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(0, 0, 410, 320);
+
+        setSize(new java.awt.Dimension(425, 327));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -206,6 +221,7 @@ public class Equacao extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;

@@ -52,110 +52,166 @@ public class matrPage extends javax.swing.JFrame {
         z3v = new javax.swing.JTextField();
         plus2 = new javax.swing.JLabel();
         jbox = new javax.swing.JComboBox<>();
+        jLabel6 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(null);
 
+        x1v.setBackground(new java.awt.Color(0, 153, 51));
+        x1v.setFont(new java.awt.Font("Leelawadee UI", 1, 10)); // NOI18N
+        x1v.setForeground(new java.awt.Color(255, 255, 255));
         x1v.setText("X");
         getContentPane().add(x1v);
         x1v.setBounds(50, 70, 40, 30);
 
+        y1v.setBackground(new java.awt.Color(0, 153, 51));
+        y1v.setFont(new java.awt.Font("Leelawadee UI", 1, 10)); // NOI18N
+        y1v.setForeground(new java.awt.Color(255, 255, 255));
         y1v.setText("Y");
         getContentPane().add(y1v);
         y1v.setBounds(150, 70, 40, 30);
+
+        r1v.setBackground(new java.awt.Color(0, 153, 51));
+        r1v.setFont(new java.awt.Font("Leelawadee UI", 0, 10)); // NOI18N
+        r1v.setForeground(new java.awt.Color(204, 255, 204));
         getContentPane().add(r1v);
         r1v.setBounds(340, 70, 40, 30);
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 102, 0));
         jLabel1.setText("+");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(110, 70, 50, 30);
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 102, 0));
         jLabel2.setText("=");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(290, 70, 50, 30);
+        jLabel2.setBounds(300, 70, 50, 30);
 
+        x2v.setBackground(new java.awt.Color(0, 153, 51));
+        x2v.setFont(new java.awt.Font("Leelawadee UI", 1, 10)); // NOI18N
+        x2v.setForeground(new java.awt.Color(255, 255, 255));
         x2v.setText("X");
         getContentPane().add(x2v);
         x2v.setBounds(50, 130, 40, 30);
 
+        y2v.setBackground(new java.awt.Color(0, 153, 51));
+        y2v.setFont(new java.awt.Font("Leelawadee UI", 1, 10)); // NOI18N
+        y2v.setForeground(new java.awt.Color(255, 255, 255));
         y2v.setText("Y");
         getContentPane().add(y2v);
         y2v.setBounds(150, 130, 40, 30);
 
-        R.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        R.setFont(new java.awt.Font("Leelawadee", 3, 24)); // NOI18N
+        R.setForeground(new java.awt.Color(0, 102, 0));
         getContentPane().add(R);
-        R.setBounds(0, 260, 260, 40);
+        R.setBounds(20, 240, 260, 40);
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 102, 0));
         jLabel4.setText("=");
         getContentPane().add(jLabel4);
         jLabel4.setBounds(300, 130, 50, 30);
+
+        r2v.setBackground(new java.awt.Color(0, 153, 51));
+        r2v.setFont(new java.awt.Font("Leelawadee UI", 0, 10)); // NOI18N
+        r2v.setForeground(new java.awt.Color(204, 255, 204));
         getContentPane().add(r2v);
         r2v.setBounds(340, 130, 40, 30);
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 102, 0));
         jLabel5.setText("+");
         getContentPane().add(jLabel5);
         jLabel5.setBounds(110, 130, 50, 30);
 
-        jButton1.setText("jButton1");
+        jButton1.setBackground(new java.awt.Color(0, 153, 51));
+        jButton1.setFont(new java.awt.Font("Leelawadee UI", 3, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(153, 255, 153));
+        jButton1.setText("Calcular");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(320, 270, 75, 23);
+        jButton1.setBounds(320, 250, 75, 23);
 
+        z1v.setBackground(new java.awt.Color(0, 153, 51));
+        z1v.setFont(new java.awt.Font("Leelawadee UI", 1, 10)); // NOI18N
+        z1v.setForeground(new java.awt.Color(255, 255, 255));
         z1v.setText("Z");
         getContentPane().add(z1v);
         z1v.setBounds(240, 70, 40, 30);
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 102, 0));
         jLabel3.setText("+");
         getContentPane().add(jLabel3);
         jLabel3.setBounds(200, 70, 50, 30);
 
+        z2v.setBackground(new java.awt.Color(0, 153, 51));
+        z2v.setFont(new java.awt.Font("Leelawadee UI", 1, 10)); // NOI18N
+        z2v.setForeground(new java.awt.Color(255, 255, 255));
         z2v.setText("Z");
         getContentPane().add(z2v);
         z2v.setBounds(240, 130, 40, 30);
 
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(0, 102, 0));
         jLabel7.setText("+");
         getContentPane().add(jLabel7);
         jLabel7.setBounds(200, 130, 50, 30);
 
+        x3v.setBackground(new java.awt.Color(0, 153, 51));
+        x3v.setFont(new java.awt.Font("Leelawadee UI", 1, 10)); // NOI18N
+        x3v.setForeground(new java.awt.Color(255, 255, 255));
         x3v.setText("X");
         getContentPane().add(x3v);
         x3v.setBounds(50, 190, 40, 30);
 
+        y3v.setBackground(new java.awt.Color(0, 153, 51));
+        y3v.setFont(new java.awt.Font("Leelawadee UI", 1, 10)); // NOI18N
+        y3v.setForeground(new java.awt.Color(255, 255, 255));
         y3v.setText("Y");
         getContentPane().add(y3v);
         y3v.setBounds(150, 190, 40, 30);
 
-        equal.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        equal.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
+        equal.setForeground(new java.awt.Color(0, 102, 0));
         equal.setText("=");
         getContentPane().add(equal);
         equal.setBounds(300, 190, 50, 30);
+
+        r3v.setBackground(new java.awt.Color(0, 153, 51));
+        r3v.setFont(new java.awt.Font("Leelawadee UI", 0, 10)); // NOI18N
+        r3v.setForeground(new java.awt.Color(204, 255, 204));
         getContentPane().add(r3v);
         r3v.setBounds(340, 190, 40, 30);
 
-        plus1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        plus1.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
+        plus1.setForeground(new java.awt.Color(0, 102, 0));
         plus1.setText("+");
         getContentPane().add(plus1);
         plus1.setBounds(110, 190, 50, 30);
 
+        z3v.setBackground(new java.awt.Color(0, 153, 51));
+        z3v.setFont(new java.awt.Font("Leelawadee UI", 1, 10)); // NOI18N
+        z3v.setForeground(new java.awt.Color(255, 255, 255));
         z3v.setText("Z");
         getContentPane().add(z3v);
         z3v.setBounds(240, 190, 40, 30);
 
-        plus2.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        plus2.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
+        plus2.setForeground(new java.awt.Color(0, 102, 0));
         plus2.setText("+");
         getContentPane().add(plus2);
         plus2.setBounds(200, 190, 50, 30);
 
+        jbox.setBackground(new java.awt.Color(0, 153, 51));
+        jbox.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        jbox.setForeground(new java.awt.Color(255, 255, 255));
         jbox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "3x3", "2x2" }));
         jbox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -164,6 +220,11 @@ public class matrPage extends javax.swing.JFrame {
         });
         getContentPane().add(jbox);
         jbox.setBounds(160, 20, 72, 20);
+
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\menupage.png")); // NOI18N
+        jLabel6.setText("jLabel6");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(-10, 0, 410, 320);
 
         setSize(new java.awt.Dimension(416, 329));
         setLocationRelativeTo(null);
@@ -219,7 +280,7 @@ public class matrPage extends javax.swing.JFrame {
       plus2.setVisible(true);
       equal.setVisible(true); 
        }else{
-            x3v.setVisible(false);
+      x3v.setVisible(false);
       y3v.setVisible(false);
       r3v.setVisible(false);
       z1v.setVisible(false);
@@ -277,6 +338,7 @@ public class matrPage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JComboBox<String> jbox;
     private javax.swing.JLabel plus1;

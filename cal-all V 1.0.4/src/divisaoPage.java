@@ -25,55 +25,57 @@ public class divisaoPage extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         div1 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         div2 = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         divisaoresul = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
 
         setTitle("Divisão");
         getContentPane().setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel1.setText("Divisão");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(121, 38, 97, 35);
-
+        div1.setBackground(new java.awt.Color(51, 51, 255));
         div1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        div1.setForeground(new java.awt.Color(0, 0, 0));
+        div1.setText("0");
         div1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 div1ActionPerformed(evt);
             }
         });
         getContentPane().add(div1);
-        div1.setBounds(6, 139, 100, 38);
+        div1.setBounds(20, 180, 100, 38);
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Leelawadee UI", 0, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 255));
         jLabel2.setText("/");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(120, 130, 30, 48);
+        jLabel2.setBounds(140, 170, 30, 48);
 
-        jLabel3.setText("Digite acima os numeros que deseja Dividir");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(6, 240, 250, 15);
-
+        div2.setBackground(new java.awt.Color(51, 51, 255));
         div2.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        div2.setForeground(new java.awt.Color(0, 0, 0));
+        div2.setText("0");
         div2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 div2ActionPerformed(evt);
             }
         });
         getContentPane().add(div2);
-        div2.setBounds(150, 140, 100, 38);
+        div2.setBounds(170, 180, 100, 38);
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Leelawadee UI", 1, 36)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 0, 255));
         jLabel4.setText("=");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(260, 140, 40, 32);
+        jLabel4.setBounds(280, 180, 40, 48);
 
+        jButton1.setBackground(new java.awt.Color(51, 51, 255));
+        jButton1.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setText("Calcular");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -81,13 +83,25 @@ public class divisaoPage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(280, 240, 90, 25);
+        jButton1.setBounds(120, 260, 90, 23);
 
-        divisaoresul.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        divisaoresul.setFont(new java.awt.Font("Leelawadee UI", 1, 18)); // NOI18N
+        divisaoresul.setForeground(new java.awt.Color(0, 0, 255));
         getContentPane().add(divisaoresul);
-        divisaoresul.setBounds(290, 140, 90, 40);
+        divisaoresul.setBounds(290, 110, 90, 70);
 
-        setSize(new java.awt.Dimension(400, 411));
+        jLabel5.setFont(new java.awt.Font("Leelawadee", 3, 36)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel5.setText("Divisão");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(110, 50, 382, 89);
+
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\page1.png")); // NOI18N
+        jLabel6.setText("jLabel2");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(0, 0, 450, 420);
+
+        setSize(new java.awt.Dimension(457, 411));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -150,9 +164,9 @@ public class divisaoPage extends javax.swing.JFrame {
     private javax.swing.JTextField div2;
     private javax.swing.JLabel divisaoresul;
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     // End of variables declaration//GEN-END:variables
 }

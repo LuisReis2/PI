@@ -29,14 +29,19 @@ public class pageNivel3 extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         Beq2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         getContentPane().setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Leelawadee", 3, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 102, 0));
         jLabel1.setText("Escolha uma equação");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(75, 6, 230, 32);
+        jLabel1.setBounds(70, 40, 250, 30);
 
+        jButton1.setBackground(new java.awt.Color(0, 102, 0));
+        jButton1.setFont(new java.awt.Font("Leelawadee UI", 0, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Formulas de figuras");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -46,6 +51,9 @@ public class pageNivel3 extends javax.swing.JFrame {
         getContentPane().add(jButton1);
         jButton1.setBounds(280, 210, 140, 23);
 
+        Beq2.setBackground(new java.awt.Color(0, 102, 0));
+        Beq2.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        Beq2.setForeground(new java.awt.Color(255, 255, 255));
         Beq2.setText("Equação 2 grau");
         Beq2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -53,8 +61,11 @@ public class pageNivel3 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Beq2);
-        Beq2.setBounds(21, 213, 111, 23);
+        Beq2.setBounds(10, 210, 130, 20);
 
+        jButton3.setBackground(new java.awt.Color(0, 102, 0));
+        jButton3.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(204, 255, 204));
         jButton3.setText("Matriz");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -62,7 +73,12 @@ public class pageNivel3 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton3);
-        jButton3.setBounds(171, 213, 72, 23);
+        jButton3.setBounds(170, 210, 72, 23);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\Design sem nome.png")); // NOI18N
+        jLabel2.setText("jLabel2");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(0, 0, 440, 300);
 
         setSize(new java.awt.Dimension(455, 308));
         setLocationRelativeTo(null);
@@ -73,7 +89,7 @@ public class pageNivel3 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void Beq2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Beq2ActionPerformed
-            // TODO add your handling code here:
+    new Equacao().setVisible(true);            // TODO add your handling code here:
     }//GEN-LAST:event_Beq2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -120,5 +136,6 @@ public class pageNivel3 extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }

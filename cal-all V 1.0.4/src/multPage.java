@@ -28,15 +28,18 @@ public class multPage extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         mult1 = new javax.swing.JTextField();
         mult2 = new javax.swing.JTextField();
-        multresul = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        multresul = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setTitle("Multiplicação");
         getContentPane().setLayout(null);
 
+        jButton1.setBackground(new java.awt.Color(51, 51, 255));
+        jButton1.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setText("calcular");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -44,49 +47,57 @@ public class multPage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(350, 290, 90, 23);
+        jButton1.setBounds(90, 240, 90, 23);
 
+        mult1.setBackground(new java.awt.Color(51, 51, 255));
+        mult1.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        mult1.setForeground(new java.awt.Color(0, 0, 0));
         mult1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mult1ActionPerformed(evt);
             }
         });
         getContentPane().add(mult1);
-        mult1.setBounds(20, 180, 100, 38);
+        mult1.setBounds(10, 180, 100, 38);
 
+        mult2.setBackground(new java.awt.Color(51, 51, 255));
+        mult2.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        mult2.setForeground(new java.awt.Color(0, 0, 0));
         mult2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mult2ActionPerformed(evt);
             }
         });
         getContentPane().add(mult2);
-        mult2.setBounds(160, 180, 100, 38);
+        mult2.setBounds(170, 180, 100, 38);
 
-        multresul.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                multresulActionPerformed(evt);
-            }
-        });
-        getContentPane().add(multresul);
-        multresul.setBounds(330, 180, 100, 38);
-
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Leelawadee UI", 1, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 255));
         jLabel2.setText("=");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(280, 180, 30, 38);
+        jLabel2.setBounds(290, 180, 30, 38);
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Leelawadee UI", 1, 36)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 255));
         jLabel3.setText("x");
         getContentPane().add(jLabel3);
         jLabel3.setBounds(130, 180, 30, 38);
 
-        jLabel4.setText("Digite acima os numeros que deseja Multiplicar");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(20, 290, 250, 16);
-
+        jLabel1.setFont(new java.awt.Font("Leelawadee", 3, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 255));
         jLabel1.setText("Multiplicação");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(150, 70, 80, 16);
+        jLabel1.setBounds(110, 40, 382, 89);
+
+        multresul.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
+        multresul.setForeground(new java.awt.Color(0, 0, 255));
+        getContentPane().add(multresul);
+        multresul.setBounds(330, 150, 110, 90);
+
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\page1.png")); // NOI18N
+        jLabel4.setText("jLabel2");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(0, 0, 500, 420);
 
         setSize(new java.awt.Dimension(492, 371));
         setLocationRelativeTo(null);
@@ -109,10 +120,6 @@ public class multPage extends javax.swing.JFrame {
     private void mult2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mult2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_mult2ActionPerformed
-
-    private void multresulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_multresulActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_multresulActionPerformed
 
     /**
      * @param args the command line arguments
@@ -157,6 +164,6 @@ public class multPage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JTextField mult1;
     private javax.swing.JTextField mult2;
-    private javax.swing.JTextField multresul;
+    private javax.swing.JLabel multresul;
     // End of variables declaration//GEN-END:variables
 }

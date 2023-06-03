@@ -36,10 +36,14 @@ public class Tpage extends javax.swing.JFrame {
         labelb = new javax.swing.JLabel();
         lado = new javax.swing.JTextField();
         labella = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(null);
 
+        form.setBackground(new java.awt.Color(0, 153, 51));
+        form.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        form.setForeground(new java.awt.Color(153, 255, 153));
         form.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "área", "perimetro", "volume" }));
         form.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -47,8 +51,11 @@ public class Tpage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(form);
-        form.setBounds(140, 30, 73, 20);
+        form.setBounds(140, 30, 91, 20);
 
+        basev.setBackground(new java.awt.Color(0, 153, 51));
+        basev.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        basev.setForeground(new java.awt.Color(153, 255, 153));
         basev.setText("0");
         basev.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -58,6 +65,9 @@ public class Tpage extends javax.swing.JFrame {
         getContentPane().add(basev);
         basev.setBounds(140, 120, 60, 30);
 
+        alturav.setBackground(new java.awt.Color(0, 153, 51));
+        alturav.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        alturav.setForeground(new java.awt.Color(153, 255, 153));
         alturav.setText("0");
         alturav.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -67,27 +77,38 @@ public class Tpage extends javax.swing.JFrame {
         getContentPane().add(alturav);
         alturav.setBounds(140, 170, 60, 30);
 
-        jButton1.setText("jButton1");
+        jButton1.setBackground(new java.awt.Color(0, 153, 51));
+        jButton1.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(153, 255, 153));
+        jButton1.setText("calcular");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(310, 230, 73, 25);
+        jButton1.setBounds(240, 170, 75, 23);
 
-        R.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        R.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
+        R.setForeground(new java.awt.Color(0, 102, 0));
         getContentPane().add(R);
-        R.setBounds(20, 240, 340, 40);
+        R.setBounds(0, 250, 400, 40);
 
+        labelh.setFont(new java.awt.Font("Leelawadee UI", 3, 12)); // NOI18N
+        labelh.setForeground(new java.awt.Color(0, 102, 0));
         labelh.setText("Tamanho da altura");
         getContentPane().add(labelh);
-        labelh.setBounds(10, 180, 140, 15);
+        labelh.setBounds(10, 180, 140, 16);
 
+        labelb.setFont(new java.awt.Font("Leelawadee UI", 3, 12)); // NOI18N
+        labelb.setForeground(new java.awt.Color(0, 102, 0));
         labelb.setText("tamanho da base");
         getContentPane().add(labelb);
-        labelb.setBounds(20, 130, 100, 15);
+        labelb.setBounds(20, 130, 100, 16);
 
+        lado.setBackground(new java.awt.Color(0, 153, 51));
+        lado.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        lado.setForeground(new java.awt.Color(153, 255, 153));
         lado.setText("0");
         lado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,9 +118,16 @@ public class Tpage extends javax.swing.JFrame {
         getContentPane().add(lado);
         lado.setBounds(140, 210, 60, 30);
 
+        labella.setFont(new java.awt.Font("Leelawadee UI", 3, 12)); // NOI18N
+        labella.setForeground(new java.awt.Color(0, 102, 0));
         labella.setText("tamanho dos lados");
         getContentPane().add(labella);
-        labella.setBounds(10, 220, 140, 15);
+        labella.setBounds(10, 220, 140, 16);
+
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\menupage.png")); // NOI18N
+        jLabel6.setText("jLabel6");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(-10, 0, 410, 320);
 
         setSize(new java.awt.Dimension(416, 339));
         setLocationRelativeTo(null);
@@ -213,6 +241,7 @@ public class Tpage extends javax.swing.JFrame {
     private javax.swing.JTextField basev;
     private javax.swing.JComboBox<String> form;
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel labelb;
     private javax.swing.JLabel labelh;
     private javax.swing.JLabel labella;

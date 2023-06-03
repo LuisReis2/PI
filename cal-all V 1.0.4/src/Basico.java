@@ -33,15 +33,24 @@ public class Basico extends javax.swing.JFrame {
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Operações Basicas");
+        setAutoRequestFocus(false);
+        setBackground(new java.awt.Color(153, 153, 255));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         getContentPane().setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Leelawadee", 3, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 255));
         jLabel1.setText("Operações Basicas");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(70, 50, 382, 89);
+        jLabel1.setBounds(90, 80, 382, 89);
 
+        jButton1.setBackground(new java.awt.Color(51, 51, 255));
+        jButton1.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setText("Subtração");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -51,6 +60,9 @@ public class Basico extends javax.swing.JFrame {
         getContentPane().add(jButton1);
         jButton1.setBounds(180, 230, 140, 33);
 
+        jButton3.setBackground(new java.awt.Color(51, 51, 255));
+        jButton3.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(0, 0, 0));
         jButton3.setText("Divisão");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -60,6 +72,9 @@ public class Basico extends javax.swing.JFrame {
         getContentPane().add(jButton3);
         jButton3.setBounds(340, 290, 140, 33);
 
+        jButton4.setBackground(new java.awt.Color(51, 51, 255));
+        jButton4.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(0, 0, 0));
         jButton4.setText("Multiplicação");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -69,6 +84,9 @@ public class Basico extends javax.swing.JFrame {
         getContentPane().add(jButton4);
         jButton4.setBounds(340, 230, 140, 33);
 
+        Soma.setBackground(new java.awt.Color(51, 51, 255));
+        Soma.setFont(new java.awt.Font("Leelawadee", 1, 12)); // NOI18N
+        Soma.setForeground(new java.awt.Color(0, 0, 0));
         Soma.setText("Soma");
         Soma.setToolTipText("X + Y = Z");
         Soma.addActionListener(new java.awt.event.ActionListener() {
@@ -79,6 +97,9 @@ public class Basico extends javax.swing.JFrame {
         getContentPane().add(Soma);
         Soma.setBounds(10, 230, 140, 33);
 
+        jButton7.setBackground(new java.awt.Color(51, 51, 255));
+        jButton7.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        jButton7.setForeground(new java.awt.Color(0, 0, 0));
         jButton7.setText("Calorias");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -88,6 +109,9 @@ public class Basico extends javax.swing.JFrame {
         getContentPane().add(jButton7);
         jButton7.setBounds(180, 290, 140, 33);
 
+        jButton8.setBackground(new java.awt.Color(51, 51, 255));
+        jButton8.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        jButton8.setForeground(new java.awt.Color(0, 0, 0));
         jButton8.setText("IMC");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,6 +121,9 @@ public class Basico extends javax.swing.JFrame {
         getContentPane().add(jButton8);
         jButton8.setBounds(10, 290, 140, 33);
 
+        jButton2.setBackground(new java.awt.Color(51, 51, 255));
+        jButton2.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(0, 0, 0));
         jButton2.setText("Potencia");
         jButton2.setToolTipText("2² = 4");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -107,7 +134,12 @@ public class Basico extends javax.swing.JFrame {
         getContentPane().add(jButton2);
         jButton2.setBounds(190, 340, 110, 30);
 
-        setSize(new java.awt.Dimension(518, 521));
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\page1.png")); // NOI18N
+        jLabel2.setText("jLabel2");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(0, 0, 500, 420);
+
+        setSize(new java.awt.Dimension(518, 427));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -184,5 +216,6 @@ new ImcPage() .setVisible(true);        // TODO add your handling code here:
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }

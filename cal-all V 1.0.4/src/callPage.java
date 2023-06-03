@@ -34,13 +34,20 @@ public class callPage extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jToggleButton1 = new javax.swing.JToggleButton();
         R = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         getContentPane().setLayout(null);
 
+        jLabel1.setFont(new java.awt.Font("Leelawadee UI", 3, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 255));
         jLabel1.setText("Escolha um gênero");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(110, 40, 120, 15);
+        jLabel1.setBounds(140, 110, 120, 16);
 
+        genero.setBackground(new java.awt.Color(51, 51, 255));
+        genero.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        genero.setForeground(new java.awt.Color(0, 0, 0));
         genero.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "homem", "mulher" }));
         genero.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -48,8 +55,11 @@ public class callPage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(genero);
-        genero.setBounds(110, 60, 100, 24);
+        genero.setBounds(140, 140, 100, 22);
 
+        xv.setBackground(new java.awt.Color(51, 51, 255));
+        xv.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        xv.setForeground(new java.awt.Color(0, 0, 0));
         xv.setText("0");
         xv.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -57,12 +67,17 @@ public class callPage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(xv);
-        xv.setBounds(30, 120, 71, 30);
+        xv.setBounds(150, 200, 71, 30);
 
+        jLabel2.setFont(new java.awt.Font("Leelawadee UI", 3, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 255));
         jLabel2.setText("peso");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(30, 95, 80, 20);
+        jLabel2.setBounds(170, 170, 80, 20);
 
+        jToggleButton1.setBackground(new java.awt.Color(51, 51, 255));
+        jToggleButton1.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        jToggleButton1.setForeground(new java.awt.Color(0, 0, 0));
         jToggleButton1.setText("Calcular");
         jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -70,11 +85,22 @@ public class callPage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jToggleButton1);
-        jToggleButton1.setBounds(260, 250, 110, 25);
+        jToggleButton1.setBounds(130, 240, 110, 23);
         getContentPane().add(R);
-        R.setBounds(30, 160, 350, 30);
+        R.setBounds(0, 270, 350, 30);
 
-        setSize(new java.awt.Dimension(416, 354));
+        jLabel3.setFont(new java.awt.Font("Leelawadee", 3, 36)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel3.setText("Calorias");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(120, 10, 382, 89);
+
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\page1.png")); // NOI18N
+        jLabel4.setText("jLabel2");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(0, 0, 410, 360);
+
+        setSize(new java.awt.Dimension(410, 354));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -148,6 +174,8 @@ public class callPage extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> genero;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JTextField xv;
     // End of variables declaration//GEN-END:variables

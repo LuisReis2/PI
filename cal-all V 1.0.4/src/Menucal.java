@@ -33,7 +33,7 @@ public class Menucal extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
-        jLabel7 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Call-All");
@@ -41,7 +41,7 @@ public class Menucal extends javax.swing.JFrame {
         getContentPane().add(jLabel1);
         jLabel1.setBounds(190, 10, 0, 140);
 
-        jButton1.setBackground(new java.awt.Color(0, 153, 102));
+        jButton1.setBackground(new java.awt.Color(51, 255, 51));
         jButton1.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
         jButton1.setText("Conversões");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -59,21 +59,21 @@ public class Menucal extends javax.swing.JFrame {
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("Dutch801 Rm BT", 0, 18)); // NOI18N
-        jLabel3.setText("Bem vindo ao Calc-all, aqui disponibilizaremos algumas operações");
+        jLabel3.setText("Bem vindo ao Calc-all! aqui disponibilizaremos algumas operações");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(10, 160, 530, 40);
+        jLabel3.setBounds(0, 160, 530, 40);
 
         jLabel4.setFont(new java.awt.Font("Dutch801 Rm BT", 0, 18)); // NOI18N
         jLabel4.setText("matematicas para faciliar seu entendimento e ajudar na solução das");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(10, 190, 530, 40);
+        jLabel4.setBounds(0, 190, 560, 40);
 
         jLabel5.setFont(new java.awt.Font("Dutch801 Rm BT", 0, 18)); // NOI18N
         jLabel5.setText("operações matematicas.");
         getContentPane().add(jLabel5);
         jLabel5.setBounds(10, 220, 530, 40);
 
-        jButton2.setBackground(new java.awt.Color(0, 153, 102));
+        jButton2.setBackground(new java.awt.Color(51, 255, 51));
         jButton2.setFont(new java.awt.Font("Dialog", 3, 11)); // NOI18N
         jButton2.setText("Operações Basicas");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -84,7 +84,7 @@ public class Menucal extends javax.swing.JFrame {
         getContentPane().add(jButton2);
         jButton2.setBounds(10, 320, 140, 30);
 
-        jButton4.setBackground(new java.awt.Color(0, 153, 102));
+        jButton4.setBackground(new java.awt.Color(51, 255, 51));
         jButton4.setFont(new java.awt.Font("Dialog", 3, 11)); // NOI18N
         jButton4.setText("Operações Avançadas");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -94,8 +94,11 @@ public class Menucal extends javax.swing.JFrame {
         });
         getContentPane().add(jButton4);
         jButton4.setBounds(360, 320, 160, 30);
-        getContentPane().add(jLabel7);
-        jLabel7.setBounds(0, 0, 550, 510);
+
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\Inserir um subtítulo.png")); // NOI18N
+        jLabel6.setText("jLabel6");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(0, 0, 550, 530);
 
         setSize(new java.awt.Dimension(566, 543));
         setLocationRelativeTo(null);
@@ -157,6 +160,6 @@ new pageNivel2().setVisible(true);       // TODO add your handling code here:
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel6;
     // End of variables declaration//GEN-END:variables
 }
