@@ -1,3 +1,6 @@
+
+import java.text.DecimalFormat;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -88,7 +91,7 @@ public class divisaoPage extends javax.swing.JFrame {
         divisaoresul.setFont(new java.awt.Font("Leelawadee UI", 1, 18)); // NOI18N
         divisaoresul.setForeground(new java.awt.Color(0, 0, 255));
         getContentPane().add(divisaoresul);
-        divisaoresul.setBounds(290, 110, 90, 70);
+        divisaoresul.setBounds(310, 170, 90, 70);
 
         jLabel5.setFont(new java.awt.Font("Leelawadee", 3, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 0, 255));
@@ -114,14 +117,15 @@ public class divisaoPage extends javax.swing.JFrame {
     }//GEN-LAST:event_div2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-
+        String xcortado;
         double vdiv1, vdiv2, vdivisaoresul;
         vdiv1 = Integer.parseInt(div1.getText());
         vdiv2 = Integer.parseInt(div2.getText());
-
+        DecimalFormat df = new DecimalFormat("0.00");
+        
         vdivisaoresul = vdiv1 / vdiv2;// TODO add your handling code here:
-
-        divisaoresul.setText(String.valueOf(vdivisaoresul));
+        xcortado = df.format(vdivisaoresul);
+        divisaoresul.setText(String.valueOf(xcortado));
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

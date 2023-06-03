@@ -1,3 +1,6 @@
+
+import java.text.DecimalFormat;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -170,16 +173,17 @@ public class Tpage extends javax.swing.JFrame {
     }//GEN-LAST:event_alturavActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        String op, msg;
-        int  b, h, l, ab, area,  vol, peri;
+        String op, msg, areac;
+        double  b, h, l, ab, area,  vol, peri;
         //arestav.setText("0");
-        b = Integer.parseInt(basev.getText());
-        h = Integer.parseInt(alturav.getText());
-
+        b = Double.parseDouble(basev.getText());
+        h = Double.parseDouble(alturav.getText());
+        DecimalFormat df = new DecimalFormat("0.00");
         op = form.getSelectedItem().toString();
         if(op.equals("área")){
             area = (b*h)/2;
-            msg = "A área do triângulo é " +  area + "cm²";
+            areac = df.format(area);
+            msg = "A área do triângulo é " +  areac + "cm²";
             R.setText(String.valueOf(msg));
         }else if(op.equals("perimetro")){
             l = Integer.parseInt(lado.getText());

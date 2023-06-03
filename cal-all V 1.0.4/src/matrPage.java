@@ -106,7 +106,7 @@ public class matrPage extends javax.swing.JFrame {
         R.setFont(new java.awt.Font("Leelawadee", 3, 24)); // NOI18N
         R.setForeground(new java.awt.Color(0, 102, 0));
         getContentPane().add(R);
-        R.setBounds(20, 240, 260, 40);
+        R.setBounds(10, 240, 300, 40);
 
         jLabel4.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 102, 0));
@@ -231,32 +231,32 @@ public class matrPage extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-    int x1, x2, x3, y1, y2, y3, z1, z2, z3, r1, r2, r3;
+    double x1, x2, x3, y1, y2, y3, z1, z2, z3, r1, r2, r3;
     String result, op;
     try{
     op = jbox.getSelectedItem().toString();
    if(op.equals("2x2")){
-    x1 = Integer.parseInt(x1v.getText());
-    x2 = Integer.parseInt(x2v.getText());
-    y1 = Integer.parseInt(y1v.getText());
-    y2 = Integer.parseInt(y2v.getText());
-    r1 = Integer.parseInt(r1v.getText());
-    r2 = Integer.parseInt(r2v.getText());
+    x1 = Double.parseDouble(x1v.getText());
+    x2 = Double.parseDouble(x2v.getText());
+    y1 = Double.parseDouble(y1v.getText());
+    y2 = Double.parseDouble(y2v.getText());
+    r1 = Double.parseDouble(r1v.getText());
+    r2 = Double.parseDouble(r2v.getText());
     result = mat2(x1, x2, y1, y2, r1, r2);
     R.setText(String.valueOf(result));
    }else{
-    x1 = Integer.parseInt(x1v.getText());
-    x2 = Integer.parseInt(x2v.getText());
-    x3 = Integer.parseInt(x3v.getText());
-    y1 = Integer.parseInt(y1v.getText());
-    y2 = Integer.parseInt(y2v.getText());
-    y3 = Integer.parseInt(y3v.getText());
-    z1 = Integer.parseInt(z1v.getText());
-    z2 = Integer.parseInt(z2v.getText());
-    z3 = Integer.parseInt(z3v.getText());
-    r1 = Integer.parseInt(r1v.getText());
-    r2 = Integer.parseInt(r2v.getText());
-    r3 = Integer.parseInt(r3v.getText());
+    x1 = Double.parseDouble(x1v.getText());
+    x2 = Double.parseDouble(x2v.getText());
+    x3 = Double.parseDouble(x3v.getText());
+    y1 = Double.parseDouble(y1v.getText());
+    y2 = Double.parseDouble(y2v.getText());
+    y3 = Double.parseDouble(y3v.getText());
+    z1 = Double.parseDouble(z1v.getText());
+    z2 = Double.parseDouble(z2v.getText());
+    z3 = Double.parseDouble(z3v.getText());
+    r1 = Double.parseDouble(r1v.getText());
+    r2 = Double.parseDouble(r2v.getText());
+    r3 = Double.parseDouble(r3v.getText());
     result = mat3(x1, x2, x3, y1, y2, y3, z1, z2, z3, r1, r2, r3);
     R.setText(String.valueOf(result));
     
@@ -357,8 +357,8 @@ public class matrPage extends javax.swing.JFrame {
     private javax.swing.JTextField z3v;
     // End of variables declaration//GEN-END:variables
 
-    private String mat2(int x1, int x2, int y1, int y2, int r1, int r2) {
-        int D =  (x1 * y2) - (x2 * y1);
+    private String mat2(double x1, double x2, double y1, double y2, double r1, double r2) {
+        double D =  (x1 * y2) - (x2 * y1);
     
 
 double  X = ((r1 * y2) - (r2 * y1))/D;
@@ -370,11 +370,11 @@ String msg = "X: " + X + "\n Y: " + Y;
 return msg;// Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
-    private String mat3(int x1, int x2, int x3, int y1, int y2, int y3, int z1, int z2, int z3, int r1, int r2, int r3) {
-        int D = ((x1 * y2 * z3) + (y1 * z2 * x3 ) + (z1 * x2 * y3)) - ((x3 * y2 * z1) + (y3 * z2 * x1) + (z3 * x2 * y1)) ;
- int Dx = ((r1 * y2 * z3) + (y1 * z2 * r3) + (z1 * r2 * y3)) - ((r3 * y2 * z1) + (y3 * z2 * r1) + (z3 * r2 * y1));
- int Dy = ((x1 * r2 * z3) + (r1 * z2 * x3) + (z1 * x2 * r3)) - ((x3 * r2 * z1) + (r3 * z2 * x1) + (z3 * x2 * r1));
- int Dz = ((x1 * y2 * r3) + (y1 * r2 * x3) + (r1 * x2 * y3)) - ((x3 * y2 * r1) + (y3 * r2 * x1) + (r3 * x2 * y1));
+    private String mat3(double x1, double x2, double x3, double y1, double y2, double y3, double z1, double z2, double z3, double r1, double r2, double r3) {
+        double D = ((x1 * y2 * z3) + (y1 * z2 * x3 ) + (z1 * x2 * y3)) - ((x3 * y2 * z1) + (y3 * z2 * x1) + (z3 * x2 * y1)) ;
+ double Dx = ((r1 * y2 * z3) + (y1 * z2 * r3) + (z1 * r2 * y3)) - ((r3 * y2 * z1) + (y3 * z2 * r1) + (z3 * r2 * y1));
+ double Dy = ((x1 * r2 * z3) + (r1 * z2 * x3) + (z1 * x2 * r3)) - ((x3 * r2 * z1) + (r3 * z2 * x1) + (z3 * x2 * r1));
+ double Dz = ((x1 * y2 * r3) + (y1 * r2 * x3) + (r1 * x2 * y3)) - ((x3 * y2 * r1) + (y3 * r2 * x1) + (r3 * x2 * y1));
  double X = Dx/D;
  double Y = Dy/D;
  double Z = Dz/D;

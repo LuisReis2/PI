@@ -1,4 +1,5 @@
 
+import java.text.DecimalFormat;
 import javax.swing.JOptionPane;
 
 /*
@@ -229,19 +230,23 @@ public class Equacao extends javax.swing.JFrame {
 
     private String[] deltb(int va, int vb, int vc, int vdelta) {
         String msg[] = new String[2];
-        double vx1, vx2;
-
+        double  vx1, vx2;
+        String x1, x2;
+        DecimalFormat df = new DecimalFormat("0.00");
         if (vdelta < 0) {
             JOptionPane.showMessageDialog(null, "Não há X real possivel");
         } else if (vdelta == 0) {
             vx1 = -vb + Math.sqrt(vdelta) / 2 * va;
+            x1 = df.format(vx1);
             msg[0] = "O valor de x é" + vx1;
             msg[1] = "";
         } else {
             vx1 = -vb + Math.sqrt(vdelta) / 2 * va;
             vx2 = -vb - Math.sqrt(vdelta) / 2 * va;
-            msg[0] = "O valor de x1 é " + vx1;
-            msg[1] = "o valor de x2 é " + vx2;
+            x1 = df.format(vx1);
+            x2 = df.format(vx2);
+            msg[0] = "O valor de x1 é " + x1;
+            msg[1] = "o valor de x2 é " + x2;
         }
         return msg;
     }

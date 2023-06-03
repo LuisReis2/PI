@@ -86,6 +86,8 @@ public class callPage extends javax.swing.JFrame {
         });
         getContentPane().add(jToggleButton1);
         jToggleButton1.setBounds(130, 240, 110, 23);
+
+        R.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
         getContentPane().add(R);
         R.setBounds(0, 270, 350, 30);
 

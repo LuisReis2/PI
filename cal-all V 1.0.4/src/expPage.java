@@ -25,22 +25,164 @@ public class expPage extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        xpPage = new javax.swing.JLabel();
+        callPage = new javax.swing.JLabel();
+        imcPage = new javax.swing.JLabel();
+        matr2x2 = new javax.swing.JLabel();
+        matr3x3 = new javax.swing.JLabel();
+        Tpage = new javax.swing.JLabel();
+        Qpage = new javax.swing.JLabel();
+        eq2Page = new javax.swing.JLabel();
+        explica = new javax.swing.JComboBox<>();
+        Rpage = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 600, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 600, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        getContentPane().setLayout(null);
+
+        xpPage.setText("expPage");
+        getContentPane().add(xpPage);
+        xpPage.setBounds(150, 260, 70, 16);
+
+        callPage.setText("callPage");
+        getContentPane().add(callPage);
+        callPage.setBounds(280, 260, 60, 16);
+
+        imcPage.setText("imc");
+        getContentPane().add(imcPage);
+        imcPage.setBounds(240, 330, 37, 16);
+
+        matr2x2.setText("matr2x2");
+        getContentPane().add(matr2x2);
+        matr2x2.setBounds(310, 320, 70, 16);
+
+        matr3x3.setText("matr3x3");
+        getContentPane().add(matr3x3);
+        matr3x3.setBounds(400, 270, 70, 16);
+
+        Tpage.setText("Tpage");
+        getContentPane().add(Tpage);
+        Tpage.setBounds(400, 380, 37, 16);
+
+        Qpage.setText("Qpage");
+        getContentPane().add(Qpage);
+        Qpage.setBounds(290, 420, 35, 16);
+
+        eq2Page.setText("eq2Page");
+        getContentPane().add(eq2Page);
+        eq2Page.setBounds(100, 390, 50, 16);
+
+        explica.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "explicações", "calorias", "IMC", "equação 2 grau", "triângulo", "quadrado", "retângulo", "matriz 2x2", "matriz 3x3" }));
+        explica.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                explicaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(explica);
+        explica.setBounds(230, 180, 110, 22);
+
+        Rpage.setText("Rpage");
+        getContentPane().add(Rpage);
+        Rpage.setBounds(70, 320, 33, 16);
 
         setSize(new java.awt.Dimension(600, 600));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void explicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_explicaActionPerformed
+        String op;
+        op = explica.getSelectedItem().toString();  
+        if(op.equals("calorias")){
+            Qpage.setVisible(false);
+            Tpage.setVisible(false);
+            imcPage.setVisible(false);
+            Rpage.setVisible(false);
+            matr2x2.setVisible(false);
+            matr3x3.setVisible(false);
+            eq2Page.setVisible(false);
+            xpPage.setVisible(false);
+            callPage.setVisible(true);
+        }else if(op.equals("IMC")){
+            Qpage.setVisible(false);
+            Tpage.setVisible(false);
+            imcPage.setVisible(true);
+            Rpage.setVisible(false);
+            matr2x2.setVisible(false);
+            matr3x3.setVisible(false);
+            eq2Page.setVisible(false);
+            xpPage.setVisible(false);
+            callPage.setVisible(false);
+        }else if(op.equals("equação 2 grau")){
+            Qpage.setVisible(false);
+            Tpage.setVisible(false);
+            imcPage.setVisible(false);
+            Rpage.setVisible(false);
+            matr2x2.setVisible(false);
+            matr3x3.setVisible(false);
+            eq2Page.setVisible(true);
+            xpPage.setVisible(false);
+            callPage.setVisible(false);
+        } else if(op.equals("matriz 2x2")){
+             Qpage.setVisible(false);
+            Tpage.setVisible(false);
+            imcPage.setVisible(false);
+            Rpage.setVisible(false);
+            matr2x2.setVisible(true);
+            matr3x3.setVisible(false);
+            eq2Page.setVisible(false);
+            xpPage.setVisible(false);
+            callPage.setVisible(false);
+        }else if(op.equals("matriz 3x3")){
+            Qpage.setVisible(false);
+            Tpage.setVisible(false);
+            imcPage.setVisible(false);
+            Rpage.setVisible(false);
+            matr2x2.setVisible(false);
+            matr3x3.setVisible(true);
+            eq2Page.setVisible(false);
+            xpPage.setVisible(false);
+            callPage.setVisible(false);
+        }else if(op.equals("triângulo")){
+            Qpage.setVisible(false);
+            Tpage.setVisible(true);
+            imcPage.setVisible(false);
+            Rpage.setVisible(false);
+            matr2x2.setVisible(false);
+            matr3x3.setVisible(false);
+            eq2Page.setVisible(false);
+            xpPage.setVisible(false);
+            callPage.setVisible(false);
+        }else if(op.equals("retângulo")){
+            Qpage.setVisible(false);
+            Tpage.setVisible(false);
+            imcPage.setVisible(false);
+            Rpage.setVisible(true);
+            matr2x2.setVisible(false);
+            matr3x3.setVisible(false);
+            eq2Page.setVisible(false);
+            xpPage.setVisible(false);
+            callPage.setVisible(false);
+        }else if(op.equals("quadrado")){
+            Qpage.setVisible(true);
+            Tpage.setVisible(false);
+            imcPage.setVisible(false);
+            Rpage.setVisible(false);
+            matr2x2.setVisible(false);
+            matr3x3.setVisible(false);
+            eq2Page.setVisible(false);
+            xpPage.setVisible(false);
+            callPage.setVisible(false);
+        }else if(op.equals("explicações")){
+            Qpage.setVisible(false);
+            Tpage.setVisible(false);
+            imcPage.setVisible(false);
+            Rpage.setVisible(false);
+            matr2x2.setVisible(false);
+            matr3x3.setVisible(false);
+            eq2Page.setVisible(false);
+            xpPage.setVisible(true);
+            callPage.setVisible(false);
+        }
+    }//GEN-LAST:event_explicaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +220,15 @@ public class expPage extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Qpage;
+    private javax.swing.JLabel Rpage;
+    private javax.swing.JLabel Tpage;
+    private javax.swing.JLabel callPage;
+    private javax.swing.JLabel eq2Page;
+    private javax.swing.JComboBox<String> explica;
+    private javax.swing.JLabel imcPage;
+    private javax.swing.JLabel matr2x2;
+    private javax.swing.JLabel matr3x3;
+    private javax.swing.JLabel xpPage;
     // End of variables declaration//GEN-END:variables
 }
