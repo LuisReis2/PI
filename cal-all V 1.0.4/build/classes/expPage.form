@@ -60,7 +60,7 @@
           <Color blue="0" green="0" red="0" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Luis\Desktop\exps\expPage.png"/>
+          <Image iconType="3" name="/imagem/imagens/expPage.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="expPage"/>
       </Properties>
@@ -76,7 +76,7 @@
           <Color blue="0" green="0" red="0" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Luis\Desktop\exps\callexp.png"/>
+          <Image iconType="3" name="/imagem/imagens/callexp.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="callPage"/>
       </Properties>
@@ -92,7 +92,7 @@
           <Color blue="0" green="0" red="0" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Luis\Desktop\exps\imcexp.png"/>
+          <Image iconType="3" name="/imagem/imagens/imcexp.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="imc"/>
       </Properties>
@@ -108,7 +108,7 @@
           <Color blue="0" green="0" red="0" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Luis\Desktop\exps\matr2x2.jpeg"/>
+          <Image iconType="3" name="/imagem/imagens/matr2x2.jpeg"/>
         </Property>
         <Property name="text" type="java.lang.String" value="matr2x2"/>
       </Properties>
@@ -124,7 +124,7 @@
           <Color blue="0" green="0" red="0" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Luis\Desktop\exps\tpageexp.png"/>
+          <Image iconType="3" name="/imagem/imagens/tpageexp.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Tpage"/>
       </Properties>
@@ -140,7 +140,7 @@
           <Color blue="0" green="0" red="0" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Luis\Desktop\exps\qpageexp.jpeg"/>
+          <Image iconType="3" name="/imagem/imagens/qpageexp.jpeg"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Qpage"/>
       </Properties>
@@ -156,7 +156,7 @@
           <Color blue="0" green="0" red="0" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Luis\Downloads\mat3x3.png"/>
+          <Image iconType="3" name="/imagem/imagens/mat3x3.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="matr3x3"/>
       </Properties>
@@ -172,7 +172,7 @@
           <Color blue="0" green="0" red="0" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Luis\Desktop\exps\eq2exp.png"/>
+          <Image iconType="3" name="/imagem/imagens/eq2exp.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="eq2Page"/>
       </Properties>
@@ -188,7 +188,7 @@
           <Color blue="0" green="0" red="0" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Luis\Downloads\Rpage.png"/>
+          <Image iconType="3" name="/imagem/imagens/Rpage.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Rpage"/>
       </Properties>

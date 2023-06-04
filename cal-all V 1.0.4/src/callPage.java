@@ -111,7 +111,7 @@ public class callPage extends javax.swing.JFrame {
         getContentPane().add(btnexp);
         btnexp.setBounds(250, 240, 100, 23);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\page1.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/imagens/page1.png"))); // NOI18N
         jLabel4.setText("jLabel2");
         getContentPane().add(jLabel4);
         jLabel4.setBounds(0, 0, 410, 360);

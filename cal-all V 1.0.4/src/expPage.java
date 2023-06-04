@@ -58,55 +58,55 @@ public class expPage extends javax.swing.JFrame {
         explica.setBounds(220, 10, 110, 22);
 
         xpPage.setForeground(new java.awt.Color(0, 0, 0));
-        xpPage.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Desktop\\exps\\expPage.png")); // NOI18N
+        xpPage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/imagens/expPage.png"))); // NOI18N
         xpPage.setText("expPage");
         getContentPane().add(xpPage);
         xpPage.setBounds(0, 0, 600, 620);
 
         callPage.setForeground(new java.awt.Color(0, 0, 0));
-        callPage.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Desktop\\exps\\callexp.png")); // NOI18N
+        callPage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/imagens/callexp.png"))); // NOI18N
         callPage.setText("callPage");
         getContentPane().add(callPage);
         callPage.setBounds(0, 0, 600, 590);
 
         imcPage.setForeground(new java.awt.Color(0, 0, 0));
-        imcPage.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Desktop\\exps\\imcexp.png")); // NOI18N
+        imcPage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/imagens/imcexp.png"))); // NOI18N
         imcPage.setText("imc");
         getContentPane().add(imcPage);
         imcPage.setBounds(0, 0, 600, 590);
 
         matr2x2.setForeground(new java.awt.Color(0, 0, 0));
-        matr2x2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Desktop\\exps\\matr2x2.jpeg")); // NOI18N
+        matr2x2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/imagens/matr2x2.jpeg"))); // NOI18N
         matr2x2.setText("matr2x2");
         getContentPane().add(matr2x2);
         matr2x2.setBounds(0, 0, 600, 590);
 
         Tpage.setForeground(new java.awt.Color(0, 0, 0));
-        Tpage.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Desktop\\exps\\tpageexp.png")); // NOI18N
+        Tpage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/imagens/tpageexp.png"))); // NOI18N
         Tpage.setText("Tpage");
         getContentPane().add(Tpage);
         Tpage.setBounds(0, 0, 600, 590);
 
         Qpage.setForeground(new java.awt.Color(0, 0, 0));
-        Qpage.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Desktop\\exps\\qpageexp.jpeg")); // NOI18N
+        Qpage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/imagens/qpageexp.jpeg"))); // NOI18N
         Qpage.setText("Qpage");
         getContentPane().add(Qpage);
         Qpage.setBounds(0, 0, 600, 590);
 
         matr3x3.setForeground(new java.awt.Color(0, 0, 0));
-        matr3x3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\mat3x3.png")); // NOI18N
+        matr3x3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/imagens/mat3x3.png"))); // NOI18N
         matr3x3.setText("matr3x3");
         getContentPane().add(matr3x3);
         matr3x3.setBounds(0, 0, 600, 620);
 
         eq2Page.setForeground(new java.awt.Color(0, 0, 0));
-        eq2Page.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Desktop\\exps\\eq2exp.png")); // NOI18N
+        eq2Page.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/imagens/eq2exp.png"))); // NOI18N
         eq2Page.setText("eq2Page");
         getContentPane().add(eq2Page);
         eq2Page.setBounds(0, 0, 600, 590);
 
         Rpage.setForeground(new java.awt.Color(0, 0, 0));
-        Rpage.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\Rpage.png")); // NOI18N
+        Rpage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/imagens/Rpage.png"))); // NOI18N
         Rpage.setText("Rpage");
         getContentPane().add(Rpage);
         Rpage.setBounds(0, -20, 600, 620);

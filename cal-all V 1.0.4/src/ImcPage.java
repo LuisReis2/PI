@@ -115,7 +115,7 @@ public class ImcPage extends javax.swing.JFrame {
         getContentPane().add(btnexp);
         btnexp.setBounds(230, 260, 100, 23);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\page1.png")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/imagens/page1.png"))); // NOI18N
         jLabel6.setText("jLabel2");
         getContentPane().add(jLabel6);
         jLabel6.setBounds(0, -20, 520, 420);

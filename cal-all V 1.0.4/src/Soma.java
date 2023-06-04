@@ -96,7 +96,7 @@ public class Soma extends javax.swing.JFrame {
         getContentPane().add(somaresul);
         somaresul.setBounds(280, 140, 120, 40);
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\page1.png")); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/imagens/page1.png"))); // NOI18N
         jLabel5.setText("jLabel2");
         getContentPane().add(jLabel5);
         jLabel5.setBounds(0, 0, 430, 340);

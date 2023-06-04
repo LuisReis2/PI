@@ -154,7 +154,7 @@ public class pageNivel2 extends javax.swing.JFrame {
         getContentPane().add(jLabel6);
         jLabel6.setBounds(130, 80, 50, 20);
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\page2.png")); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/imagens/page2.png"))); // NOI18N
         jLabel5.setText("jLabel5");
         getContentPane().add(jLabel5);
         jLabel5.setBounds(0, 0, 400, 320);

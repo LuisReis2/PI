@@ -100,7 +100,7 @@ public class divisaoPage extends javax.swing.JFrame {
         getContentPane().add(jLabel5);
         jLabel5.setBounds(110, 50, 382, 89);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\page1.png")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/imagens/page1.png"))); // NOI18N
         jLabel6.setText("jLabel2");
         getContentPane().add(jLabel6);
         jLabel6.setBounds(0, 0, 450, 420);

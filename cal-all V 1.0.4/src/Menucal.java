@@ -102,7 +102,7 @@ public class Menucal extends javax.swing.JFrame {
         getContentPane().add(jButton4);
         jButton4.setBounds(360, 320, 160, 30);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\Inserir um subtítulo.png")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/imagens/menu.png"))); // NOI18N
         jLabel6.setText("jLabel6");
         getContentPane().add(jLabel6);
         jLabel6.setBounds(0, 0, 550, 530);

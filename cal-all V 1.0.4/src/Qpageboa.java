@@ -120,7 +120,7 @@ public class Qpageboa extends javax.swing.JFrame {
         getContentPane().add(btnexp);
         btnexp.setBounds(290, 150, 100, 23);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\menupage.png")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/imagens/page3.png"))); // NOI18N
         jLabel6.setText("jLabel6");
         getContentPane().add(jLabel6);
         jLabel6.setBounds(0, 0, 410, 320);
