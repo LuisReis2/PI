@@ -37,7 +37,7 @@ public class pageNivel3 extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(0, 102, 0));
         jLabel1.setText("Escolha uma equação");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(70, 40, 250, 30);
+        jLabel1.setBounds(70, 40, 290, 30);
 
         jButton1.setBackground(new java.awt.Color(0, 102, 0));
         jButton1.setFont(new java.awt.Font("Leelawadee UI", 0, 12)); // NOI18N
@@ -49,7 +49,7 @@ public class pageNivel3 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(280, 210, 140, 23);
+        jButton1.setBounds(280, 210, 140, 26);
 
         Beq2.setBackground(new java.awt.Color(0, 102, 0));
         Beq2.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
@@ -61,7 +61,7 @@ public class pageNivel3 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Beq2);
-        Beq2.setBounds(10, 210, 130, 20);
+        Beq2.setBounds(10, 210, 130, 26);
 
         jButton3.setBackground(new java.awt.Color(0, 102, 0));
         jButton3.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
@@ -73,7 +73,7 @@ public class pageNivel3 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton3);
-        jButton3.setBounds(170, 210, 72, 23);
+        jButton3.setBounds(170, 210, 70, 26);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/imagens/page3.png"))); // NOI18N
         jLabel2.setText("jLabel2");
