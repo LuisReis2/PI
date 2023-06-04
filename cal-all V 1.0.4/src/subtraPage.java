@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -114,13 +117,17 @@ public class subtraPage extends javax.swing.JFrame {
     }//GEN-LAST:event_sub2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
- int vsub1, vsub2, vsubResult;
-        vsub1 = Integer.parseInt(sub1.getText());
-        vsub2 = Integer.parseInt(sub2.getText());
+ double vsub1, vsub2, vsubResult;
+       try{
+        vsub1 = Double.parseDouble(sub1.getText());
+        vsub2 = Double.parseDouble(sub2.getText());
         
         vsubResult = vsub1 - vsub2;// TODO add your handling code here:
         
-        subresul.setText(String.valueOf(vsubResult));        // TODO add your handling code here:
+        subresul.setText(String.valueOf(vsubResult));  
+       }catch (NumberFormatException x) {
+            JOptionPane.showMessageDialog(null, "Digite apenas valores validos");
+       }// TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

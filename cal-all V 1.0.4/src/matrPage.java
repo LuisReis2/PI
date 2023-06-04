@@ -228,7 +228,7 @@ public class matrPage extends javax.swing.JFrame {
     
    }
     }catch (NumberFormatException x) {
-            JOptionPane.showMessageDialog(null, "Digite apenas validos");
+            JOptionPane.showMessageDialog(null, "Digite apenas valores validos");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 

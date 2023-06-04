@@ -218,7 +218,7 @@ public class pageNivel2 extends javax.swing.JFrame {
                 octalv.setText(String.valueOf(octal));
             }
         } catch (NumberFormatException x) {
-            JOptionPane.showMessageDialog(null, "Digite apenas validos");
+            JOptionPane.showMessageDialog(null, "Digite apenas valores validos");
         }
     }//GEN-LAST:event_btnCalcularActionPerformed
 

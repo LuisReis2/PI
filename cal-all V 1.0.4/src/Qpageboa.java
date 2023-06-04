@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -156,6 +159,7 @@ public class Qpageboa extends javax.swing.JFrame {
  String op, msg;
        int L, area, a, vol, peri;
        //arestav.setText("0");
+       try{
        L = Integer.parseInt(ladov.getText());
            op = form.getSelectedItem().toString();
         if(op.equals("área")){
@@ -172,9 +176,11 @@ public class Qpageboa extends javax.swing.JFrame {
             msg = "O volume do cubo é " + vol + "cm³";
              R.setText(String.valueOf(msg));
         }
+       }catch (NumberFormatException x) {
+            JOptionPane.showMessageDialog(null, "Digite apenas vaores validos");
                                    // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
-
+    }
     private void btnexpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnexpActionPerformed
         new expPage().setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_btnexpActionPerformed

@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -157,7 +160,7 @@ public class Rpage extends javax.swing.JFrame {
 
     private void formActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_formActionPerformed
         String op;
-
+        
         op = form.getSelectedItem().toString();
         if (op.equals("volume")){
             labelb.setVisible(true);
@@ -188,6 +191,7 @@ public class Rpage extends javax.swing.JFrame {
         String op, msg;
         int  b, h, l,area,  vol, peri;
         //arestav.setText("0");
+        try{
         b = Integer.parseInt(basev.getText());
         h = Integer.parseInt(alturav.getText());
         
@@ -205,6 +209,9 @@ public class Rpage extends javax.swing.JFrame {
             vol =  h*b*l;
             msg = "O volume do paralelepipedo é " + vol + "cm³";
             R.setText(String.valueOf(msg));
+        }
+        }catch (NumberFormatException x) {
+            JOptionPane.showMessageDialog(null, "Digite apenas valores validos");
         }
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed

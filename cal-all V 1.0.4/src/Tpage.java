@@ -1,5 +1,6 @@
 
 import java.text.DecimalFormat;
+import javax.swing.JOptionPane;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -189,6 +190,7 @@ public class Tpage extends javax.swing.JFrame {
         String op, msg, areac;
         double  b, h, l, ab, area,  vol, peri;
         //arestav.setText("0");
+        try{
         b = Double.parseDouble(basev.getText());
         h = Double.parseDouble(alturav.getText());
         DecimalFormat df = new DecimalFormat("0.00");
@@ -209,6 +211,9 @@ public class Tpage extends javax.swing.JFrame {
             vol =  (ab*h)/3;
             msg = "O volume da piramide é " + vol + "cm³";
             R.setText(String.valueOf(msg));
+        }
+        }catch (NumberFormatException x) {
+            JOptionPane.showMessageDialog(null, "Digite apenas valores validos");
         }
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed

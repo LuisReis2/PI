@@ -1,5 +1,6 @@
 
 import java.text.DecimalFormat;
+import javax.swing.JOptionPane;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -126,6 +127,7 @@ public class ImcPage extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         float vpeso, valtura, vIMC ;
         String vIMCReduzido, vCL;
+        try{
      vpeso = Float.parseFloat(peso.getText());
      valtura = Float.parseFloat(altura.getText());
 
@@ -139,6 +141,9 @@ public class ImcPage extends javax.swing.JFrame {
         
         IMC.setText(vIMCReduzido);
         Cl.setText(String.valueOf(vCL));
+        }catch (NumberFormatException x) {
+            JOptionPane.showMessageDialog(null, "Digite apenas valores validos");
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btnexpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnexpActionPerformed

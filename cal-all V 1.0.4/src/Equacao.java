@@ -175,6 +175,7 @@ public class Equacao extends javax.swing.JFrame {
         String delt;
         String result[] = new String[2];
         double vx1, vx2;
+        try{
         va  = Integer.parseInt(A.getText());
         vb = Integer.parseInt(B.getText());
         vc = Integer.parseInt(C.getText());
@@ -187,6 +188,9 @@ public class Equacao extends javax.swing.JFrame {
             result = deltb(va, vb, vc, vdelta);
             R1.setText(String.valueOf(result[0]));
              R2.setText(String.valueOf(result[1]));
+        }
+        }catch (NumberFormatException y) {
+            JOptionPane.showMessageDialog(null, "Digite apenas valores validos");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 

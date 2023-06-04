@@ -1,5 +1,6 @@
 
 import java.text.DecimalFormat;
+import javax.swing.JOptionPane;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -130,6 +131,7 @@ public class callPage extends javax.swing.JFrame {
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
         String msg, gr, caloriaReduzida;
         double x, peso; 
+        try{
         gr = genero.getSelectedItem().toString();
         peso = Double.parseDouble(xv.getText());
          DecimalFormat df = new DecimalFormat("0.00");
@@ -144,6 +146,9 @@ public class callPage extends javax.swing.JFrame {
            caloriaReduzida = df.format(x);
             msg = "Você gasta " +  caloriaReduzida + " calorias por dia";
             R.setText(String.valueOf(msg));
+        }
+        }catch (NumberFormatException y) {
+            JOptionPane.showMessageDialog(null, "Digite apenas valores validos");
         }
         
         // TODO add your handling code here:

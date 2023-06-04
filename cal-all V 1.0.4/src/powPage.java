@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -121,10 +124,14 @@ public class powPage extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
     double num, pot, result;
+    try{
     num = Double.parseDouble(numv.getText());
     pot = Double.parseDouble(potv.getText());
     result = Math.pow(num, pot);
     R.setText(String.valueOf(result));
+    }catch (NumberFormatException y) {
+            JOptionPane.showMessageDialog(null, "Digite apenas valores validos");
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void numvFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_numvFocusLost

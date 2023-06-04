@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -112,13 +115,17 @@ public class Soma extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
-        int vs1, vs2, vsomaResult;
-        vs1 = Integer.parseInt(s1.getText());
-        vs2 = Integer.parseInt(s2.getText());
+        double vs1, vs2, vsomaResult;
+        try{
+        vs1 = Double.parseDouble(s1.getText());
+        vs2 = Double.parseDouble(s2.getText());
         
         vsomaResult = vs1 + vs2;// TODO add your handling code here:
         
         somaresul.setText(String.valueOf(vsomaResult));
+        }catch (NumberFormatException x) {
+            JOptionPane.showMessageDialog(null, "Digite apenas vaalores validos");
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

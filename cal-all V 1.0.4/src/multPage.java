@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -105,12 +108,16 @@ public class multPage extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         int vmult1, vmult2, vmultResult;
+        try{
         vmult1 = Integer.parseInt(mult1.getText());
         vmult2 = Integer.parseInt(mult2.getText());
 
         vmultResult = vmult1 * vmult2;// TODO add your handling code here:
 
-        multresul.setText(String.valueOf(vmultResult));        // TODO add your handling code here:
+        multresul.setText(String.valueOf(vmultResult));      
+        }catch (NumberFormatException x) {
+            JOptionPane.showMessageDialog(null, "Digite apenas valores validos");
+        }// TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void mult1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mult1ActionPerformed
