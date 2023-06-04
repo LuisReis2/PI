@@ -204,7 +204,7 @@ public class ImcPage extends javax.swing.JFrame {
         String x;
         x = "";
          if (vIMC < 18.5) {
-            x = "Você abaixo do peso";
+            x = "abaixo do peso";
             //Cl.setEditable(false);
         }else if (vIMC >= 18.5 && vIMC < 24.9){
             x = "Peso normal";
