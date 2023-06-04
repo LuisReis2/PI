@@ -132,7 +132,7 @@ public class Basico extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(190, 340, 110, 30);
+        jButton2.setBounds(180, 340, 140, 30);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/imagens/page1.png"))); // NOI18N
         jLabel2.setText("jLabel2");

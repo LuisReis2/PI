@@ -55,7 +55,7 @@ public class ImcPage extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(0, 0, 255));
         jLabel2.setText("Informe seu peso:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(10, 120, 100, 30);
+        jLabel2.setBounds(10, 120, 130, 30);
 
         jLabel3.setFont(new java.awt.Font("Leelawadee UI", 1, 36)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 0, 255));
@@ -73,17 +73,17 @@ public class ImcPage extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(0, 0, 255));
         jLabel5.setText("Classificação:");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(0, 260, 100, 30);
+        jLabel5.setBounds(10, 260, 100, 30);
 
         altura.setBackground(new java.awt.Color(51, 51, 255));
         altura.setForeground(new java.awt.Color(0, 0, 0));
         getContentPane().add(altura);
-        altura.setBounds(120, 160, 100, 30);
+        altura.setBounds(130, 160, 100, 30);
 
         peso.setBackground(new java.awt.Color(51, 51, 255));
         peso.setForeground(new java.awt.Color(0, 0, 0));
         getContentPane().add(peso);
-        peso.setBounds(120, 120, 100, 30);
+        peso.setBounds(130, 120, 100, 30);
 
         jButton1.setBackground(new java.awt.Color(51, 51, 255));
         jButton1.setForeground(new java.awt.Color(0, 0, 0));
@@ -94,7 +94,7 @@ public class ImcPage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(250, 140, 150, 40);
+        jButton1.setBounds(320, 140, 150, 40);
         getContentPane().add(IMC);
         IMC.setBounds(80, 220, 70, 30);
 
@@ -113,7 +113,7 @@ public class ImcPage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnexp);
-        btnexp.setBounds(230, 260, 100, 23);
+        btnexp.setBounds(230, 260, 100, 26);
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/imagens/page1.png"))); // NOI18N
         jLabel6.setText("jLabel2");

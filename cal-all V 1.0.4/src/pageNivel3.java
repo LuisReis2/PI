@@ -31,6 +31,7 @@ public class pageNivel3 extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
+        setTitle("Equações");
         getContentPane().setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Leelawadee", 3, 24)); // NOI18N

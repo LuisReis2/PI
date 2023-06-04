@@ -107,7 +107,7 @@ public class matrPage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(320, 240, 75, 23);
+        jButton1.setBounds(290, 230, 100, 26);
 
         z1v.setBackground(new java.awt.Color(0, 153, 51));
         z1v.setFont(new java.awt.Font("Leelawadee UI", 1, 10)); // NOI18N
@@ -178,7 +178,7 @@ public class matrPage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jbox);
-        jbox.setBounds(160, 20, 72, 20);
+        jbox.setBounds(160, 20, 70, 20);
 
         btnexp.setBackground(new java.awt.Color(0, 153, 51));
         btnexp.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
@@ -190,7 +190,7 @@ public class matrPage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnexp);
-        btnexp.setBounds(310, 270, 90, 23);
+        btnexp.setBounds(290, 260, 100, 26);
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/imagens/page3.png"))); // NOI18N
         jLabel6.setText("jLabel6");

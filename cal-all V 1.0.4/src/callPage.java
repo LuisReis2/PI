@@ -39,6 +39,7 @@ public class callPage extends javax.swing.JFrame {
         btnexp = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
 
+        setTitle("Calorias");
         getContentPane().setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Leelawadee UI", 3, 12)); // NOI18N
@@ -57,7 +58,7 @@ public class callPage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(genero);
-        genero.setBounds(140, 140, 100, 22);
+        genero.setBounds(140, 140, 100, 25);
 
         xv.setBackground(new java.awt.Color(51, 51, 255));
         xv.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
@@ -87,7 +88,7 @@ public class callPage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jToggleButton1);
-        jToggleButton1.setBounds(130, 240, 110, 23);
+        jToggleButton1.setBounds(130, 240, 110, 26);
 
         R.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
         getContentPane().add(R);
@@ -109,7 +110,7 @@ public class callPage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnexp);
-        btnexp.setBounds(250, 240, 100, 23);
+        btnexp.setBounds(250, 240, 100, 26);
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/imagens/page1.png"))); // NOI18N
         jLabel4.setText("jLabel2");

@@ -78,7 +78,7 @@ public class Soma extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(0, 0, 255));
         jLabel4.setText("=");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(260, 140, 40, 48);
+        jLabel4.setBounds(260, 130, 40, 48);
 
         jButton1.setBackground(new java.awt.Color(51, 51, 255));
         jButton1.setForeground(new java.awt.Color(0, 0, 0));
@@ -89,12 +89,12 @@ public class Soma extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(80, 200, 90, 23);
+        jButton1.setBounds(80, 200, 90, 25);
 
         somaresul.setFont(new java.awt.Font("Leelawadee UI", 1, 18)); // NOI18N
         somaresul.setForeground(new java.awt.Color(0, 0, 255));
         getContentPane().add(somaresul);
-        somaresul.setBounds(280, 140, 120, 40);
+        somaresul.setBounds(300, 140, 120, 40);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/imagens/page1.png"))); // NOI18N
         jLabel5.setText("jLabel2");

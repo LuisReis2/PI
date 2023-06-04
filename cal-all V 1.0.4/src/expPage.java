@@ -46,6 +46,7 @@ public class expPage extends javax.swing.JFrame {
         Rpage = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Explicações");
         getContentPane().setLayout(null);
 
         explica.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "explicações", "calorias", "IMC", "equação 2 grau", "triângulo", "quadrado", "retângulo", "matriz 2x2", "matriz 3x3" }));
@@ -55,7 +56,7 @@ public class expPage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(explica);
-        explica.setBounds(220, 10, 110, 22);
+        explica.setBounds(220, 10, 110, 24);
 
         xpPage.setForeground(new java.awt.Color(0, 0, 0));
         xpPage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/imagens/expPage.png"))); // NOI18N

@@ -87,12 +87,12 @@ public class divisaoPage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(120, 260, 90, 23);
+        jButton1.setBounds(120, 260, 90, 26);
 
         divisaoresul.setFont(new java.awt.Font("Leelawadee UI", 1, 18)); // NOI18N
         divisaoresul.setForeground(new java.awt.Color(0, 0, 255));
         getContentPane().add(divisaoresul);
-        divisaoresul.setBounds(310, 170, 90, 70);
+        divisaoresul.setBounds(320, 170, 120, 70);
 
         jLabel5.setFont(new java.awt.Font("Leelawadee", 3, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 0, 255));

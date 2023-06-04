@@ -34,6 +34,7 @@ public class figuPlanPage extends javax.swing.JFrame {
 
         jLabel2.setText("jLabel2");
 
+        setTitle("Figuras Planas");
         getContentPane().setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
@@ -51,7 +52,7 @@ public class figuPlanPage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(40, 240, 90, 23);
+        jButton1.setBounds(40, 220, 90, 26);
 
         jButton2.setBackground(new java.awt.Color(0, 153, 51));
         jButton2.setFont(new java.awt.Font("Leelawadee UI", 3, 12)); // NOI18N
@@ -62,7 +63,7 @@ public class figuPlanPage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(170, 240, 90, 23);
+        jButton2.setBounds(150, 220, 120, 26);
 
         jButton3.setBackground(new java.awt.Color(0, 153, 51));
         jButton3.setFont(new java.awt.Font("Leelawadee UI", 3, 12)); // NOI18N
@@ -73,7 +74,7 @@ public class figuPlanPage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton3);
-        jButton3.setBounds(290, 240, 90, 23);
+        jButton3.setBounds(290, 220, 90, 26);
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/imagens/page3.png"))); // NOI18N
         jLabel6.setText("jLabel6");

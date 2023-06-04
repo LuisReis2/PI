@@ -44,6 +44,7 @@ public class Tpage extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Triangulo");
         getContentPane().setLayout(null);
 
         form.setBackground(new java.awt.Color(0, 153, 51));
@@ -56,7 +57,7 @@ public class Tpage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(form);
-        form.setBounds(140, 30, 91, 20);
+        form.setBounds(140, 30, 110, 20);
 
         basev.setBackground(new java.awt.Color(0, 153, 51));
         basev.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
@@ -92,7 +93,7 @@ public class Tpage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(240, 170, 75, 23);
+        jButton1.setBounds(240, 170, 100, 26);
 
         R.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
         R.setForeground(new java.awt.Color(0, 102, 0));
@@ -139,7 +140,7 @@ public class Tpage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnexp);
-        btnexp.setBounds(238, 200, 88, 30);
+        btnexp.setBounds(238, 200, 92, 30);
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/imagens/page3.png"))); // NOI18N
         jLabel6.setText("jLabel6");

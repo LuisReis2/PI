@@ -41,6 +41,7 @@ public class Qpageboa extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Quadrado");
         getContentPane().setLayout(null);
 
         form.setBackground(new java.awt.Color(0, 153, 51));
@@ -52,7 +53,7 @@ public class Qpageboa extends javax.swing.JFrame {
             }
         });
         getContentPane().add(form);
-        form.setBounds(130, 32, 91, 20);
+        form.setBounds(130, 32, 110, 20);
 
         ladov.setBackground(new java.awt.Color(0, 153, 51));
         ladov.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
@@ -92,7 +93,7 @@ public class Qpageboa extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(290, 120, 75, 23);
+        jButton1.setBounds(290, 120, 100, 26);
 
         labelca.setBackground(new java.awt.Color(0, 102, 0));
         labelca.setFont(new java.awt.Font("Leelawadee UI", 1, 18)); // NOI18N
@@ -118,7 +119,7 @@ public class Qpageboa extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnexp);
-        btnexp.setBounds(290, 150, 100, 23);
+        btnexp.setBounds(290, 150, 100, 26);
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/imagens/page3.png"))); // NOI18N
         jLabel6.setText("jLabel6");

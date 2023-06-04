@@ -47,6 +47,7 @@ public class Rpage extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Retangulo");
         getContentPane().setLayout(null);
 
         form.setBackground(new java.awt.Color(0, 153, 51));
@@ -60,7 +61,7 @@ public class Rpage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(form);
-        form.setBounds(140, 30, 86, 20);
+        form.setBounds(140, 30, 120, 20);
 
         basev.setBackground(new java.awt.Color(0, 153, 51));
         basev.setFont(new java.awt.Font("Leelawadee UI", 0, 12)); // NOI18N
@@ -99,7 +100,7 @@ public class Rpage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(260, 150, 72, 23);
+        jButton1.setBounds(250, 150, 100, 26);
 
         R.setFont(new java.awt.Font("Leelawadee UI", 1, 18)); // NOI18N
         R.setForeground(new java.awt.Color(0, 102, 0));
@@ -147,7 +148,7 @@ public class Rpage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnexp);
-        btnexp.setBounds(250, 180, 100, 23);
+        btnexp.setBounds(250, 180, 100, 26);
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/imagens/page3.png"))); // NOI18N
         jLabel6.setText("jLabel6");

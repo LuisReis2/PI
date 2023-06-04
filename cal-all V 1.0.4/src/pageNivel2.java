@@ -41,13 +41,14 @@ public class pageNivel2 extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
 
+        setTitle("Conversor");
         getContentPane().setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(204, 0, 0));
         jLabel1.setText("Decimal");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(130, 110, 70, 20);
+        jLabel1.setBounds(130, 90, 70, 20);
 
         decimalv.setBackground(new java.awt.Color(255, 51, 51));
         decimalv.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
@@ -63,13 +64,13 @@ public class pageNivel2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(decimalv);
-        decimalv.setBounds(200, 110, 80, 22);
+        decimalv.setBounds(200, 90, 80, 30);
 
         jLabel2.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(204, 0, 0));
         jLabel2.setText("Hexadecimal");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(110, 170, 110, 20);
+        jLabel2.setBounds(100, 190, 110, 20);
 
         jLabel3.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(204, 0, 0));
@@ -81,7 +82,7 @@ public class pageNivel2 extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(204, 0, 0));
         jLabel4.setText("Octal");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(140, 140, 50, 20);
+        jLabel4.setBounds(130, 140, 50, 20);
 
         octalv.setBackground(new java.awt.Color(255, 51, 51));
         octalv.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
@@ -97,7 +98,7 @@ public class pageNivel2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(octalv);
-        octalv.setBounds(200, 140, 80, 22);
+        octalv.setBounds(200, 130, 80, 30);
 
         hexav.setBackground(new java.awt.Color(255, 51, 51));
         hexav.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
@@ -113,7 +114,7 @@ public class pageNivel2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(hexav);
-        hexav.setBounds(200, 170, 80, 22);
+        hexav.setBounds(200, 180, 80, 30);
 
         btnCalcular.setBackground(new java.awt.Color(255, 51, 51));
         btnCalcular.setForeground(new java.awt.Color(0, 0, 0));
@@ -124,7 +125,7 @@ public class pageNivel2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnCalcular);
-        btnCalcular.setBounds(130, 210, 90, 23);
+        btnCalcular.setBounds(140, 230, 90, 25);
 
         binariov.setBackground(new java.awt.Color(255, 51, 51));
         binariov.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
@@ -135,7 +136,7 @@ public class pageNivel2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(binariov);
-        binariov.setBounds(200, 80, 80, 22);
+        binariov.setBounds(200, 50, 80, 30);
 
         jButton1.setBackground(new java.awt.Color(255, 51, 51));
         jButton1.setForeground(new java.awt.Color(0, 0, 0));
@@ -146,13 +147,13 @@ public class pageNivel2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(300, 120, 75, 23);
+        jButton1.setBounds(300, 120, 75, 25);
 
         jLabel6.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(204, 0, 0));
         jLabel6.setText("Binário");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(130, 80, 50, 20);
+        jLabel6.setBounds(130, 50, 50, 20);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/imagens/page2.png"))); // NOI18N
         jLabel5.setText("jLabel5");

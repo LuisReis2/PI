@@ -37,7 +37,7 @@ public class subtraPage extends javax.swing.JFrame {
         subresul = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
 
-        setTitle("SubtraPage");
+        setTitle("Subtração");
         getContentPane().setLayout(null);
 
         jButton1.setBackground(new java.awt.Color(51, 51, 255));
@@ -50,7 +50,7 @@ public class subtraPage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(350, 290, 72, 23);
+        jButton1.setBounds(350, 290, 76, 26);
 
         sub1.setBackground(new java.awt.Color(51, 51, 255));
         sub1.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
@@ -97,7 +97,7 @@ public class subtraPage extends javax.swing.JFrame {
         subresul.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
         subresul.setForeground(new java.awt.Color(0, 0, 255));
         getContentPane().add(subresul);
-        subresul.setBounds(320, 170, 100, 60);
+        subresul.setBounds(320, 170, 160, 60);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/imagens/page1.png"))); // NOI18N
         jLabel5.setText("jLabel2");

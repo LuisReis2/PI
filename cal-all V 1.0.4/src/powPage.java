@@ -41,6 +41,7 @@ public class powPage extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Potencia");
         getContentPane().setLayout(null);
 
         potv.setBackground(new java.awt.Color(51, 51, 255));
@@ -94,7 +95,7 @@ public class powPage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(280, 240, 72, 23);
+        jButton1.setBounds(280, 240, 76, 26);
 
         R.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
         R.setForeground(new java.awt.Color(0, 0, 255));
