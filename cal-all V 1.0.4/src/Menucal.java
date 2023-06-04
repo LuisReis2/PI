@@ -43,6 +43,7 @@ public class Menucal extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(51, 255, 51));
         jButton1.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setText("Conversões");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -53,28 +54,33 @@ public class Menucal extends javax.swing.JFrame {
         jButton1.setBounds(190, 320, 140, 30);
 
         jLabel2.setFont(new java.awt.Font("Dutch801 Rm BT", 0, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Selecione aqui o nivel da operação que você deseja fazer.");
         getContentPane().add(jLabel2);
         jLabel2.setBounds(10, 270, 530, 40);
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("Dutch801 Rm BT", 0, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Bem vindo ao Calc-all! aqui disponibilizaremos algumas operações");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(0, 160, 530, 40);
+        jLabel3.setBounds(0, 160, 560, 40);
 
         jLabel4.setFont(new java.awt.Font("Dutch801 Rm BT", 0, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("matematicas para faciliar seu entendimento e ajudar na solução das");
         getContentPane().add(jLabel4);
         jLabel4.setBounds(0, 190, 560, 40);
 
         jLabel5.setFont(new java.awt.Font("Dutch801 Rm BT", 0, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("operações matematicas.");
         getContentPane().add(jLabel5);
         jLabel5.setBounds(10, 220, 530, 40);
 
         jButton2.setBackground(new java.awt.Color(51, 255, 51));
         jButton2.setFont(new java.awt.Font("Dialog", 3, 11)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(0, 0, 0));
         jButton2.setText("Operações Basicas");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -86,7 +92,8 @@ public class Menucal extends javax.swing.JFrame {
 
         jButton4.setBackground(new java.awt.Color(51, 255, 51));
         jButton4.setFont(new java.awt.Font("Dialog", 3, 11)); // NOI18N
-        jButton4.setText("Operações Avançadas");
+        jButton4.setForeground(new java.awt.Color(0, 0, 0));
+        jButton4.setText("Equações");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);

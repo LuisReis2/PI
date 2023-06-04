@@ -39,6 +39,7 @@ public class Tpage extends javax.swing.JFrame {
         labelb = new javax.swing.JLabel();
         lado = new javax.swing.JTextField();
         labella = new javax.swing.JLabel();
+        btnexp = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -127,6 +128,18 @@ public class Tpage extends javax.swing.JFrame {
         getContentPane().add(labella);
         labella.setBounds(10, 220, 140, 16);
 
+        btnexp.setBackground(new java.awt.Color(0, 153, 51));
+        btnexp.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        btnexp.setForeground(new java.awt.Color(153, 255, 153));
+        btnexp.setText("explicação");
+        btnexp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnexpActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnexp);
+        btnexp.setBounds(238, 200, 88, 30);
+
         jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\menupage.png")); // NOI18N
         jLabel6.setText("jLabel6");
         getContentPane().add(jLabel6);
@@ -204,6 +217,10 @@ public class Tpage extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_ladoActionPerformed
 
+    private void btnexpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnexpActionPerformed
+        new expPage().setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_btnexpActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -243,6 +260,7 @@ public class Tpage extends javax.swing.JFrame {
     private javax.swing.JLabel R;
     private javax.swing.JTextField alturav;
     private javax.swing.JTextField basev;
+    private javax.swing.JButton btnexp;
     private javax.swing.JComboBox<String> form;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel6;

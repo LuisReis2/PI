@@ -34,6 +34,7 @@ public class Qpageboa extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         labelca = new javax.swing.JLabel();
         labeltl = new javax.swing.JLabel();
+        btnexp = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -74,6 +75,7 @@ public class Qpageboa extends javax.swing.JFrame {
 
         R.setBackground(new java.awt.Color(0, 102, 0));
         R.setFont(new java.awt.Font("Leelawadee UI", 1, 18)); // NOI18N
+        R.setForeground(new java.awt.Color(0, 102, 0));
         getContentPane().add(R);
         R.setBounds(0, 200, 340, 40);
 
@@ -102,6 +104,18 @@ public class Qpageboa extends javax.swing.JFrame {
         labeltl.setText("tamanho do lado");
         getContentPane().add(labeltl);
         labeltl.setBounds(50, 100, 180, 25);
+
+        btnexp.setBackground(new java.awt.Color(0, 153, 51));
+        btnexp.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        btnexp.setForeground(new java.awt.Color(153, 255, 153));
+        btnexp.setText("explicação");
+        btnexp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnexpActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnexp);
+        btnexp.setBounds(290, 150, 100, 23);
 
         jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\menupage.png")); // NOI18N
         jLabel6.setText("jLabel6");
@@ -161,6 +175,10 @@ public class Qpageboa extends javax.swing.JFrame {
                                    // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void btnexpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnexpActionPerformed
+        new expPage().setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_btnexpActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -199,6 +217,7 @@ public class Qpageboa extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel R;
     private javax.swing.JTextField arestav;
+    private javax.swing.JButton btnexp;
     private javax.swing.JComboBox<String> form;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel6;

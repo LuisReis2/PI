@@ -30,14 +30,10 @@ public class matrPage extends javax.swing.JFrame {
 
         x1v = new javax.swing.JTextField();
         y1v = new javax.swing.JTextField();
-        r1v = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         x2v = new javax.swing.JTextField();
         y2v = new javax.swing.JTextField();
         R = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        r2v = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         z1v = new javax.swing.JTextField();
@@ -46,12 +42,11 @@ public class matrPage extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         x3v = new javax.swing.JTextField();
         y3v = new javax.swing.JTextField();
-        equal = new javax.swing.JLabel();
-        r3v = new javax.swing.JTextField();
         plus1 = new javax.swing.JLabel();
         z3v = new javax.swing.JTextField();
         plus2 = new javax.swing.JLabel();
         jbox = new javax.swing.JComboBox<>();
+        btnexp = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -71,23 +66,11 @@ public class matrPage extends javax.swing.JFrame {
         getContentPane().add(y1v);
         y1v.setBounds(150, 70, 40, 30);
 
-        r1v.setBackground(new java.awt.Color(0, 153, 51));
-        r1v.setFont(new java.awt.Font("Leelawadee UI", 0, 10)); // NOI18N
-        r1v.setForeground(new java.awt.Color(204, 255, 204));
-        getContentPane().add(r1v);
-        r1v.setBounds(340, 70, 40, 30);
-
         jLabel1.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 0));
         jLabel1.setText("+");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(110, 70, 50, 30);
-
-        jLabel2.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 102, 0));
-        jLabel2.setText("=");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(300, 70, 50, 30);
 
         x2v.setBackground(new java.awt.Color(0, 153, 51));
         x2v.setFont(new java.awt.Font("Leelawadee UI", 1, 10)); // NOI18N
@@ -106,19 +89,7 @@ public class matrPage extends javax.swing.JFrame {
         R.setFont(new java.awt.Font("Leelawadee", 3, 24)); // NOI18N
         R.setForeground(new java.awt.Color(0, 102, 0));
         getContentPane().add(R);
-        R.setBounds(10, 240, 300, 40);
-
-        jLabel4.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 102, 0));
-        jLabel4.setText("=");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(300, 130, 50, 30);
-
-        r2v.setBackground(new java.awt.Color(0, 153, 51));
-        r2v.setFont(new java.awt.Font("Leelawadee UI", 0, 10)); // NOI18N
-        r2v.setForeground(new java.awt.Color(204, 255, 204));
-        getContentPane().add(r2v);
-        r2v.setBounds(340, 130, 40, 30);
+        R.setBounds(0, 250, 300, 40);
 
         jLabel5.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 102, 0));
@@ -136,7 +107,7 @@ public class matrPage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(320, 250, 75, 23);
+        jButton1.setBounds(320, 240, 75, 23);
 
         z1v.setBackground(new java.awt.Color(0, 153, 51));
         z1v.setFont(new java.awt.Font("Leelawadee UI", 1, 10)); // NOI18N
@@ -178,18 +149,6 @@ public class matrPage extends javax.swing.JFrame {
         getContentPane().add(y3v);
         y3v.setBounds(150, 190, 40, 30);
 
-        equal.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
-        equal.setForeground(new java.awt.Color(0, 102, 0));
-        equal.setText("=");
-        getContentPane().add(equal);
-        equal.setBounds(300, 190, 50, 30);
-
-        r3v.setBackground(new java.awt.Color(0, 153, 51));
-        r3v.setFont(new java.awt.Font("Leelawadee UI", 0, 10)); // NOI18N
-        r3v.setForeground(new java.awt.Color(204, 255, 204));
-        getContentPane().add(r3v);
-        r3v.setBounds(340, 190, 40, 30);
-
         plus1.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
         plus1.setForeground(new java.awt.Color(0, 102, 0));
         plus1.setText("+");
@@ -221,17 +180,29 @@ public class matrPage extends javax.swing.JFrame {
         getContentPane().add(jbox);
         jbox.setBounds(160, 20, 72, 20);
 
+        btnexp.setBackground(new java.awt.Color(0, 153, 51));
+        btnexp.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        btnexp.setForeground(new java.awt.Color(153, 255, 153));
+        btnexp.setText("explicação");
+        btnexp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnexpActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnexp);
+        btnexp.setBounds(310, 270, 90, 23);
+
         jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\menupage.png")); // NOI18N
         jLabel6.setText("jLabel6");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(-10, 0, 410, 320);
+        jLabel6.setBounds(0, 0, 410, 320);
 
         setSize(new java.awt.Dimension(416, 329));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-    double x1, x2, x3, y1, y2, y3, z1, z2, z3, r1, r2, r3;
+    double x1, x2, x3, y1, y2, y3, z1, z2, z3;
     String result, op;
     try{
     op = jbox.getSelectedItem().toString();
@@ -240,9 +211,7 @@ public class matrPage extends javax.swing.JFrame {
     x2 = Double.parseDouble(x2v.getText());
     y1 = Double.parseDouble(y1v.getText());
     y2 = Double.parseDouble(y2v.getText());
-    r1 = Double.parseDouble(r1v.getText());
-    r2 = Double.parseDouble(r2v.getText());
-    result = mat2(x1, x2, y1, y2, r1, r2);
+    result = mat2(x1, x2, y1, y2);
     R.setText(String.valueOf(result));
    }else{
     x1 = Double.parseDouble(x1v.getText());
@@ -254,10 +223,7 @@ public class matrPage extends javax.swing.JFrame {
     z1 = Double.parseDouble(z1v.getText());
     z2 = Double.parseDouble(z2v.getText());
     z3 = Double.parseDouble(z3v.getText());
-    r1 = Double.parseDouble(r1v.getText());
-    r2 = Double.parseDouble(r2v.getText());
-    r3 = Double.parseDouble(r3v.getText());
-    result = mat3(x1, x2, x3, y1, y2, y3, z1, z2, z3, r1, r2, r3);
+    result = mat3(x1, x2, x3, y1, y2, y3, z1, z2, z3);
     R.setText(String.valueOf(result));
     
    }
@@ -272,27 +238,27 @@ public class matrPage extends javax.swing.JFrame {
        if(op.equals("3x3")){
           x3v.setVisible(true);
       y3v.setVisible(true);
-      r3v.setVisible(true);
       z1v.setVisible(true);
       z2v.setVisible(true);
       z3v.setVisible(true);
       plus1.setVisible(true);
       plus2.setVisible(true);
-      equal.setVisible(true); 
        }else{
       x3v.setVisible(false);
       y3v.setVisible(false);
-      r3v.setVisible(false);
       z1v.setVisible(false);
       z2v.setVisible(false);
       z3v.setVisible(false);
       plus1.setVisible(false);
       plus2.setVisible(false);
-      equal.setVisible(false);
        }
        
         // TODO add your handling code here:
     }//GEN-LAST:event_jboxActionPerformed
+
+    private void btnexpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnexpActionPerformed
+        new expPage().setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_btnexpActionPerformed
     
     /**
      * @param args the command line arguments
@@ -331,21 +297,16 @@ public class matrPage extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel R;
-    private javax.swing.JLabel equal;
+    private javax.swing.JButton btnexp;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JComboBox<String> jbox;
     private javax.swing.JLabel plus1;
     private javax.swing.JLabel plus2;
-    private javax.swing.JTextField r1v;
-    private javax.swing.JTextField r2v;
-    private javax.swing.JTextField r3v;
     private javax.swing.JTextField x1v;
     private javax.swing.JTextField x2v;
     private javax.swing.JTextField x3v;
@@ -357,28 +318,18 @@ public class matrPage extends javax.swing.JFrame {
     private javax.swing.JTextField z3v;
     // End of variables declaration//GEN-END:variables
 
-    private String mat2(double x1, double x2, double y1, double y2, double r1, double r2) {
+    private String mat2(double x1, double x2, double y1, double y2) {
         double D =  (x1 * y2) - (x2 * y1);
-    
+        
 
-double  X = ((r1 * y2) - (r2 * y1))/D;
-
-double  Y =  ((x1 * r2) - (x2 * r1))/D;
-
-String msg = "X: " + X + "\n Y: " + Y;
+String msg = "Determinante: " + D;
 
 return msg;// Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
-    private String mat3(double x1, double x2, double x3, double y1, double y2, double y3, double z1, double z2, double z3, double r1, double r2, double r3) {
+    private String mat3(double x1, double x2, double x3, double y1, double y2, double y3, double z1, double z2, double z3) {
         double D = ((x1 * y2 * z3) + (y1 * z2 * x3 ) + (z1 * x2 * y3)) - ((x3 * y2 * z1) + (y3 * z2 * x1) + (z3 * x2 * y1)) ;
- double Dx = ((r1 * y2 * z3) + (y1 * z2 * r3) + (z1 * r2 * y3)) - ((r3 * y2 * z1) + (y3 * z2 * r1) + (z3 * r2 * y1));
- double Dy = ((x1 * r2 * z3) + (r1 * z2 * x3) + (z1 * x2 * r3)) - ((x3 * r2 * z1) + (r3 * z2 * x1) + (z3 * x2 * r1));
- double Dz = ((x1 * y2 * r3) + (y1 * r2 * x3) + (r1 * x2 * y3)) - ((x3 * y2 * r1) + (y3 * r2 * x1) + (r3 * x2 * y1));
- double X = Dx/D;
- double Y = Dy/D;
- double Z = Dz/D;
- String msg = "X: " + X + "\n Y: " + Y + "\n Z: " + Z;
+ String msg = "Determinante: " + D;
  return msg;
     }
 }

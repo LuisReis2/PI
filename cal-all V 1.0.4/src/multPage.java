@@ -104,13 +104,13 @@ public class multPage extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        int vmult1, vmult2, vmultresul;
+        int vmult1, vmult2, vmultResult;
         vmult1 = Integer.parseInt(mult1.getText());
         vmult2 = Integer.parseInt(mult2.getText());
 
-        vmultresul = vmult1 * vmult2;// TODO add your handling code here:
+        vmultResult = vmult1 * vmult2;// TODO add your handling code here:
 
-        multresul.setText(String.valueOf(vmultresul));        // TODO add your handling code here:
+        multresul.setText(String.valueOf(vmultResult));        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void mult1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mult1ActionPerformed

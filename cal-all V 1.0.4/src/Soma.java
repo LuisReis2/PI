@@ -112,13 +112,13 @@ public class Soma extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
-        int vs1, vs2, vsomaresul;
+        int vs1, vs2, vsomaResult;
         vs1 = Integer.parseInt(s1.getText());
         vs2 = Integer.parseInt(s2.getText());
         
-        vsomaresul = vs1 + vs2;// TODO add your handling code here:
+        vsomaResult = vs1 + vs2;// TODO add your handling code here:
         
-        somaresul.setText(String.valueOf(vsomaresul));
+        somaresul.setText(String.valueOf(vsomaResult));
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

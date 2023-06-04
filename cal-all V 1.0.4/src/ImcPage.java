@@ -38,6 +38,7 @@ public class ImcPage extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         IMC = new javax.swing.JLabel();
         Cl = new javax.swing.JLabel();
+        btnexp = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
 
         setTitle("IMC");
@@ -92,7 +93,7 @@ public class ImcPage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(240, 140, 150, 40);
+        jButton1.setBounds(250, 140, 150, 40);
         getContentPane().add(IMC);
         IMC.setBounds(80, 220, 70, 30);
 
@@ -100,6 +101,18 @@ public class ImcPage extends javax.swing.JFrame {
         Cl.setForeground(new java.awt.Color(0, 0, 255));
         getContentPane().add(Cl);
         Cl.setBounds(100, 260, 160, 30);
+
+        btnexp.setBackground(new java.awt.Color(51, 51, 255));
+        btnexp.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        btnexp.setForeground(new java.awt.Color(0, 0, 0));
+        btnexp.setText("explicação");
+        btnexp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnexpActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnexp);
+        btnexp.setBounds(230, 260, 100, 23);
 
         jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\page1.png")); // NOI18N
         jLabel6.setText("jLabel2");
@@ -111,8 +124,8 @@ public class ImcPage extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        float vpeso, valtura, vIMC, vCL;
-        String vIMCReduzido;
+        float vpeso, valtura, vIMC ;
+        String vIMCReduzido, vCL;
      vpeso = Float.parseFloat(peso.getText());
      valtura = Float.parseFloat(altura.getText());
 
@@ -122,21 +135,15 @@ public class ImcPage extends javax.swing.JFrame {
         DecimalFormat df = new DecimalFormat("0.00");
         
         vIMCReduzido = df.format(vIMC);
-        
+        vCL = classiIMC(vIMC);
         
         IMC.setText(vIMCReduzido);
-
-        if (vIMC < 18.5) {
-            Cl.setText("Você abaixo do peso");
-            //Cl.setEditable(false);
-        }else if (vIMC >= 18.5 && vIMC < 24.9){
-            Cl.setText("Peso normal");
-        } else if (vIMC >=25.0 && vIMC <=29.9){
-            Cl.setText("Sobrepeso");
-        } else if (vIMC >29.9){
-            Cl.setText("Obesidade");
-        }
+        Cl.setText(String.valueOf(vCL));
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void btnexpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnexpActionPerformed
+    new expPage().setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_btnexpActionPerformed
 
     /**
      * @param args the command line arguments
@@ -177,6 +184,7 @@ public class ImcPage extends javax.swing.JFrame {
     private javax.swing.JLabel Cl;
     private javax.swing.JLabel IMC;
     private javax.swing.JTextField altura;
+    private javax.swing.JButton btnexp;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -186,4 +194,20 @@ public class ImcPage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JTextField peso;
     // End of variables declaration//GEN-END:variables
+
+    private String classiIMC(float vIMC) {
+        String x;
+        x = "";
+         if (vIMC < 18.5) {
+            x = "Você abaixo do peso";
+            //Cl.setEditable(false);
+        }else if (vIMC >= 18.5 && vIMC < 24.9){
+            x = "Peso normal";
+        } else if (vIMC >=25.0 && vIMC <=29.9){
+            x = "Sobrepeso";
+        } else if (vIMC >29.9){
+            x = "Obesidade";
+        }
+         return x;
+    }
 }

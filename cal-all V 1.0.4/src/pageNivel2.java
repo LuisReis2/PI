@@ -37,6 +37,7 @@ public class pageNivel2 extends javax.swing.JFrame {
         hexav = new javax.swing.JTextField();
         btnCalcular = new javax.swing.JButton();
         binariov = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
 
         getContentPane().setLayout(null);
@@ -122,7 +123,7 @@ public class pageNivel2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnCalcular);
-        btnCalcular.setBounds(130, 210, 73, 23);
+        btnCalcular.setBounds(130, 210, 90, 23);
 
         binariov.setBackground(new java.awt.Color(255, 51, 51));
         binariov.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
@@ -134,6 +135,17 @@ public class pageNivel2 extends javax.swing.JFrame {
         });
         getContentPane().add(binariov);
         binariov.setBounds(200, 80, 80, 22);
+
+        jButton1.setBackground(new java.awt.Color(255, 51, 51));
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
+        jButton1.setText("limpar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1);
+        jButton1.setBounds(300, 120, 75, 23);
 
         jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\page2.png")); // NOI18N
         jLabel5.setText("jLabel5");
@@ -185,8 +197,8 @@ public class pageNivel2 extends javax.swing.JFrame {
                 hexav.setText(String.valueOf(hexa));
             } else if (!octal.equals("")) {
                 decimal = Integer.parseInt(octal, 8);
-                binario = Integer.toBinaryString(decimal);
-                hexa = Integer.toHexString(decimal);
+                 hexa = Integer.toHexString(decimal);
+                 binario = Integer.toBinaryString(decimal);
                 decimalv.setText(String.valueOf(decimal));
                 hexav.setText(String.valueOf(hexa));
                 binariov.setText(String.valueOf(binario));
@@ -218,6 +230,13 @@ public class pageNivel2 extends javax.swing.JFrame {
     private void binariovFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_binariovFocusLost
         // TODO add your handling code here:
     }//GEN-LAST:event_binariovFocusLost
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        binariov.setText(String.valueOf(""));  
+        octalv.setText(String.valueOf(""));  
+        decimalv.setText(String.valueOf(""));  
+        hexav.setText(String.valueOf(""));  
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -259,6 +278,7 @@ public class pageNivel2 extends javax.swing.JFrame {
     private javax.swing.JButton btnCalcular;
     private javax.swing.JTextField decimalv;
     private javax.swing.JTextField hexav;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

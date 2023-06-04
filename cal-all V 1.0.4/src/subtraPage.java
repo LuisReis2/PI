@@ -114,13 +114,13 @@ public class subtraPage extends javax.swing.JFrame {
     }//GEN-LAST:event_sub2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
- int vsub1, vsub2, vsubresul;
+ int vsub1, vsub2, vsubResult;
         vsub1 = Integer.parseInt(sub1.getText());
         vsub2 = Integer.parseInt(sub2.getText());
         
-        vsubresul = vsub1 - vsub2;// TODO add your handling code here:
+        vsubResult = vsub1 - vsub2;// TODO add your handling code here:
         
-        subresul.setText(String.valueOf(vsubresul));        // TODO add your handling code here:
+        subresul.setText(String.valueOf(vsubResult));        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

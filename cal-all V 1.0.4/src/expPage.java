@@ -14,6 +14,15 @@ public class expPage extends javax.swing.JFrame {
      */
     public expPage() {
         initComponents();
+        Qpage.setVisible(false);
+            Tpage.setVisible(false);
+            imcPage.setVisible(false);
+            Rpage.setVisible(false);
+            matr2x2.setVisible(false);
+            matr3x3.setVisible(false);
+            eq2Page.setVisible(false);
+            xpPage.setVisible(true);
+            callPage.setVisible(false);
     }
 
     /**
@@ -25,51 +34,19 @@ public class expPage extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        explica = new javax.swing.JComboBox<>();
         xpPage = new javax.swing.JLabel();
         callPage = new javax.swing.JLabel();
         imcPage = new javax.swing.JLabel();
         matr2x2 = new javax.swing.JLabel();
-        matr3x3 = new javax.swing.JLabel();
         Tpage = new javax.swing.JLabel();
         Qpage = new javax.swing.JLabel();
+        matr3x3 = new javax.swing.JLabel();
         eq2Page = new javax.swing.JLabel();
-        explica = new javax.swing.JComboBox<>();
         Rpage = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(null);
-
-        xpPage.setText("expPage");
-        getContentPane().add(xpPage);
-        xpPage.setBounds(150, 260, 70, 16);
-
-        callPage.setText("callPage");
-        getContentPane().add(callPage);
-        callPage.setBounds(280, 260, 60, 16);
-
-        imcPage.setText("imc");
-        getContentPane().add(imcPage);
-        imcPage.setBounds(240, 330, 37, 16);
-
-        matr2x2.setText("matr2x2");
-        getContentPane().add(matr2x2);
-        matr2x2.setBounds(310, 320, 70, 16);
-
-        matr3x3.setText("matr3x3");
-        getContentPane().add(matr3x3);
-        matr3x3.setBounds(400, 270, 70, 16);
-
-        Tpage.setText("Tpage");
-        getContentPane().add(Tpage);
-        Tpage.setBounds(400, 380, 37, 16);
-
-        Qpage.setText("Qpage");
-        getContentPane().add(Qpage);
-        Qpage.setBounds(290, 420, 35, 16);
-
-        eq2Page.setText("eq2Page");
-        getContentPane().add(eq2Page);
-        eq2Page.setBounds(100, 390, 50, 16);
 
         explica.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "explicações", "calorias", "IMC", "equação 2 grau", "triângulo", "quadrado", "retângulo", "matriz 2x2", "matriz 3x3" }));
         explica.addActionListener(new java.awt.event.ActionListener() {
@@ -78,13 +55,63 @@ public class expPage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(explica);
-        explica.setBounds(230, 180, 110, 22);
+        explica.setBounds(220, 10, 110, 22);
 
+        xpPage.setForeground(new java.awt.Color(0, 0, 0));
+        xpPage.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Desktop\\exps\\expPage.png")); // NOI18N
+        xpPage.setText("expPage");
+        getContentPane().add(xpPage);
+        xpPage.setBounds(0, 0, 600, 620);
+
+        callPage.setForeground(new java.awt.Color(0, 0, 0));
+        callPage.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Desktop\\exps\\callexp.png")); // NOI18N
+        callPage.setText("callPage");
+        getContentPane().add(callPage);
+        callPage.setBounds(0, 0, 600, 590);
+
+        imcPage.setForeground(new java.awt.Color(0, 0, 0));
+        imcPage.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Desktop\\exps\\imcexp.png")); // NOI18N
+        imcPage.setText("imc");
+        getContentPane().add(imcPage);
+        imcPage.setBounds(0, 0, 600, 590);
+
+        matr2x2.setForeground(new java.awt.Color(0, 0, 0));
+        matr2x2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Desktop\\exps\\matr2x2.jpeg")); // NOI18N
+        matr2x2.setText("matr2x2");
+        getContentPane().add(matr2x2);
+        matr2x2.setBounds(0, 0, 600, 590);
+
+        Tpage.setForeground(new java.awt.Color(0, 0, 0));
+        Tpage.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Desktop\\exps\\tpageexp.png")); // NOI18N
+        Tpage.setText("Tpage");
+        getContentPane().add(Tpage);
+        Tpage.setBounds(0, 0, 600, 590);
+
+        Qpage.setForeground(new java.awt.Color(0, 0, 0));
+        Qpage.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Desktop\\exps\\qpageexp.jpeg")); // NOI18N
+        Qpage.setText("Qpage");
+        getContentPane().add(Qpage);
+        Qpage.setBounds(0, 0, 600, 590);
+
+        matr3x3.setForeground(new java.awt.Color(0, 0, 0));
+        matr3x3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\mat3x3.png")); // NOI18N
+        matr3x3.setText("matr3x3");
+        getContentPane().add(matr3x3);
+        matr3x3.setBounds(0, 0, 600, 620);
+
+        eq2Page.setForeground(new java.awt.Color(0, 0, 0));
+        eq2Page.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Desktop\\exps\\eq2exp.png")); // NOI18N
+        eq2Page.setText("eq2Page");
+        getContentPane().add(eq2Page);
+        eq2Page.setBounds(0, 0, 600, 590);
+
+        Rpage.setForeground(new java.awt.Color(0, 0, 0));
+        Rpage.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\Rpage.png")); // NOI18N
         Rpage.setText("Rpage");
         getContentPane().add(Rpage);
-        Rpage.setBounds(70, 320, 33, 16);
+        Rpage.setBounds(0, -20, 600, 620);
 
-        setSize(new java.awt.Dimension(600, 600));
+        setSize(new java.awt.Dimension(617, 637));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

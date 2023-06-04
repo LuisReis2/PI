@@ -35,6 +35,7 @@ public class callPage extends javax.swing.JFrame {
         jToggleButton1 = new javax.swing.JToggleButton();
         R = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        btnexp = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
 
         getContentPane().setLayout(null);
@@ -97,6 +98,18 @@ public class callPage extends javax.swing.JFrame {
         getContentPane().add(jLabel3);
         jLabel3.setBounds(120, 10, 382, 89);
 
+        btnexp.setBackground(new java.awt.Color(51, 51, 255));
+        btnexp.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        btnexp.setForeground(new java.awt.Color(0, 0, 0));
+        btnexp.setText("explicação");
+        btnexp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnexpActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnexp);
+        btnexp.setBounds(250, 240, 100, 23);
+
         jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\page1.png")); // NOI18N
         jLabel4.setText("jLabel2");
         getContentPane().add(jLabel4);
@@ -136,6 +149,10 @@ public class callPage extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
+    private void btnexpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnexpActionPerformed
+        new expPage().setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_btnexpActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -173,6 +190,7 @@ public class callPage extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel R;
+    private javax.swing.JButton btnexp;
     private javax.swing.JComboBox<String> genero;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

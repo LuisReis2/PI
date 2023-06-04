@@ -41,6 +41,7 @@ public class Equacao extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         R1 = new javax.swing.JLabel();
+        btnexp = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -120,7 +121,7 @@ public class Equacao extends javax.swing.JFrame {
         R2.setFont(new java.awt.Font("Leelawadee UI", 1, 24)); // NOI18N
         R2.setForeground(new java.awt.Color(0, 102, 0));
         getContentPane().add(R2);
-        R2.setBounds(20, 220, 450, 50);
+        R2.setBounds(0, 220, 450, 50);
 
         jLabel7.setText("c");
         getContentPane().add(jLabel7);
@@ -138,6 +139,18 @@ public class Equacao extends javax.swing.JFrame {
         R1.setForeground(new java.awt.Color(0, 102, 0));
         getContentPane().add(R1);
         R1.setBounds(10, 170, 450, 50);
+
+        btnexp.setBackground(new java.awt.Color(0, 153, 51));
+        btnexp.setFont(new java.awt.Font("Leelawadee UI", 1, 12)); // NOI18N
+        btnexp.setForeground(new java.awt.Color(153, 255, 153));
+        btnexp.setText("explicação");
+        btnexp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnexpActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnexp);
+        btnexp.setBounds(270, 70, 100, 30);
 
         jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\menupage.png")); // NOI18N
         jLabel6.setText("jLabel6");
@@ -158,23 +171,28 @@ public class Equacao extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
-        int va,
-         vb, vc, vdelta;
+        int va, vb, vc, vdelta;
         String delt;
         String result[] = new String[2];
         double vx1, vx2;
         va  = Integer.parseInt(A.getText());
         vb = Integer.parseInt(B.getText());
         vc = Integer.parseInt(C.getText());
-
-        vdelta = vb * vb - 4 * va  * vc;
-        delt = "O valor de delta é: " + vdelta;
-        Delta.setText(String.valueOf(delt));
-        result = deltb(va, vb, vc, vdelta);
-        R1.setText(String.valueOf(result[0]));
-        R2.setText(String.valueOf(result[1]));
-
+        if(va == 0){
+            JOptionPane.showMessageDialog(null, "Isso não é uma equação de segundo grau!");
+        }else{
+            vdelta = vb * vb - 4 * va  * vc;
+             delt = "O valor de delta é: " + vdelta;
+            Delta.setText(String.valueOf(delt));
+            result = deltb(va, vb, vc, vdelta);
+            R1.setText(String.valueOf(result[0]));
+             R2.setText(String.valueOf(result[1]));
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void btnexpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnexpActionPerformed
+        new expPage().setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_btnexpActionPerformed
 
     /**
      * @param args the command line arguments
@@ -218,6 +236,7 @@ public class Equacao extends javax.swing.JFrame {
     private javax.swing.JLabel Delta;
     private javax.swing.JLabel R1;
     private javax.swing.JLabel R2;
+    private javax.swing.JButton btnexp;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

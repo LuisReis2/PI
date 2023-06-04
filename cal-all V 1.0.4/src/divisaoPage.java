@@ -118,13 +118,13 @@ public class divisaoPage extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String xcortado;
-        double vdiv1, vdiv2, vdivisaoresul;
+        double vdiv1, vdiv2, vdivisaoResult;
         vdiv1 = Integer.parseInt(div1.getText());
         vdiv2 = Integer.parseInt(div2.getText());
         DecimalFormat df = new DecimalFormat("0.00");
         
-        vdivisaoresul = vdiv1 / vdiv2;// TODO add your handling code here:
-        xcortado = df.format(vdivisaoresul);
+        vdivisaoResult = vdiv1 / vdiv2;// TODO add your handling code here:
+        xcortado = df.format(vdivisaoResult);
         divisaoresul.setText(String.valueOf(xcortado));
     }//GEN-LAST:event_jButton1ActionPerformed
 
