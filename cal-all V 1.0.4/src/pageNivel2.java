@@ -38,6 +38,7 @@ public class pageNivel2 extends javax.swing.JFrame {
         btnCalcular = new javax.swing.JButton();
         binariov = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
 
         getContentPane().setLayout(null);
@@ -72,9 +73,9 @@ public class pageNivel2 extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(204, 0, 0));
-        jLabel3.setText("Binário");
+        jLabel3.setText("aviso:  limpe as caixas antes de introduzir um valor novo");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(130, 80, 50, 20);
+        jLabel3.setBounds(0, 20, 430, 30);
 
         jLabel4.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(204, 0, 0));
@@ -146,6 +147,12 @@ public class pageNivel2 extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1);
         jButton1.setBounds(300, 120, 75, 23);
+
+        jLabel6.setFont(new java.awt.Font("Leelawadee UI", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(204, 0, 0));
+        jLabel6.setText("Binário");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(130, 80, 50, 20);
 
         jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Luis\\Downloads\\page2.png")); // NOI18N
         jLabel5.setText("jLabel5");
@@ -284,6 +291,7 @@ public class pageNivel2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JTextField octalv;
     // End of variables declaration//GEN-END:variables
 }
